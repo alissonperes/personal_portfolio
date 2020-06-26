@@ -1,17 +1,79 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import '../assets/Projects.scss';
 
-const Projects = () => (
-  <div className="header-container">
-    <h1>Projects Section</h1>
-    <ul>
-      <li>Project</li>
-      <li>Project</li>
-      <li>Project</li>
-      <li>Project</li>
-      <li>Project</li>
-    </ul>
-  </div>
-);
+const Projects = props => {
+  const [allProjects, setAllProjects] = useState();
+  const { projects } = props;
+  const {
+    fetched, fetching, error, projectsList,
+  } = projects;
 
-export default Projects;
+  useEffect(() => {
+    if (fetched) {
+      setAllProjects(
+        projectsList.map(x => (
+          <div className="col-sm-10 pb-5" key={x.name}>
+            <div className="row rounded m-2 pt-3 pb-3 project-item">
+              <div className="col-md-5 d-flex">
+                <img src={x.openGraphImageUrl} alt={x.name} className="w-100" />
+              </div>
+              <div className="col-md-7 text-white">
+                <div className="card border-0 mb-3">
+                  <div className="card-header">{x.name}</div>
+                  <div className="card-body">
+                    <h5 className="card-title">{x.primaryLanguage.name}</h5>
+                    <p className="card-text">{x.shortDescriptionHTML}</p>
+                    <div className="btn-group" role="group" aria-label="Project links">
+                      <button type="button" className="btn btn-info">
+                        <a
+                          href={x.url}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="text-white stretched-link"
+                        >
+                          Github
+                        </a>
+                      </button>
+                      {x.homepageUrl ? (
+                        <button type="button" className="btn btn-info">
+                          <a
+                            href={x.homepageUrl}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="text-white stretched-link"
+                          >
+                            Live
+                          </a>
+                        </button>
+                      ) : (
+                        ''
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )),
+      );
+    }
+  }, [projects, fetched, fetching, error, projectsList]);
+
+  return (
+    <div className="container">
+      <div className="row justify-content-center">{allProjects}</div>
+    </div>
+  );
+};
+
+const mapStateToProps = store => ({
+  projects: store.projects,
+});
+
+Projects.propTypes = {
+  projects: PropTypes.shape().isRequired,
+};
+
+export default connect(mapStateToProps)(Projects);

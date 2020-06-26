@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import './index.css';
-import App from './App';
-import Main from './components/Main';
+import store from './store';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import App from './components/App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Main />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+window.onload = function () {
+  ReactDOM.render(
+    <Provider store={store}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Provider>,
+    document.getElementById('root'),
+  );
+};
