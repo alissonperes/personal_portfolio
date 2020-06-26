@@ -14,12 +14,9 @@ const Projects = props => {
     if (fetched) {
       setAllProjects(
         projectsList.map(x => (
-          <div className="col-sm-10 pb-5" key={x.name}>
+          <div className="col-sm-10 col-md-6 pb-5" key={x.name}>
             <div className="row rounded m-2 pt-3 pb-3 project-item">
-              <div className="col-md-5 d-flex">
-                <img src={x.openGraphImageUrl} alt={x.name} className="w-100" />
-              </div>
-              <div className="col-md-7 text-white">
+              <div className="col text-white">
                 <div className="card border-0 mb-3">
                   <div className="card-header">{x.name}</div>
                   <div className="card-body">
