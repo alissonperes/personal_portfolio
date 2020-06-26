@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { queryForUser, queryForProjects } from './queries';
 
-const personalAccessToken = '9f9abbc7fec968932b5e99c51555ae925111d4ca';
+const personalAccessToken = 'c627483a0e2d88d599a5a0e977ef5ca701de8b16';
 
 const axiosOptions = query => ({
   url: 'https://api.github.com/graphql',
