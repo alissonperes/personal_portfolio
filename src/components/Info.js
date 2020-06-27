@@ -50,9 +50,6 @@ const Info = props => {
               </h4>
             </div>
           </div>
-          <div className="row">
-            <span className="w-100 text-center">Made by Alisson Peres</span>
-          </div>
         </div>,
       );
     }
