@@ -1,3 +1,19 @@
+# AlissonPeres Personal Portfolio
+
+This project was created with
+
+- React
+- Redux
+- Redux Thunk
+- HTML5 & CSS3
+- Github GraphQL API
+
+Feel free to Fork or download this repository.
+
+For this project to work it's necessary to have a github API key.
+
+Follow the steps in ["Creating a personal access token for the command line"](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) to create a token. The scopes you require depends on the type of data you're trying to request.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
