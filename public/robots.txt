@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Crawl-delay: 120
+Disallow: /angular
+Disallow: /assets
+Disallow: /images
+Disallow: /nextcloud
+Disallow: /terms
