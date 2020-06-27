@@ -11,7 +11,7 @@ const Experience = props => {
       <div className="row">
         <div className="col-md-7">
           <h3>{item.company}</h3>
-          <h5 className="alert alert-light p-0">{item.jobTitle}</h5>
+          <h5 className="alert p-0">{item.jobTitle}</h5>
         </div>
         <div className="col-md-5">
           <p className="text-right">{item.period}</p>
@@ -30,10 +30,10 @@ const Experience = props => {
     </div>
   ));
   return (
-    <div className="container-fluid bg-white">
+    <div className="container-fluid bg-info">
       <div className="container">
-        <div className="row flex-column">
-          <h1 className="exp-title mb-4">RELEVANT EXPERIENCE</h1>
+        <div className="row flex-column pt-4">
+          <h1 className="exp-title mb-5">RELEVANT EXPERIENCE</h1>
           {expContainer}
         </div>
       </div>

@@ -20,8 +20,8 @@ const Jumbotron = props => {
       );
     } else if (fetched) {
       setJumbotronData(
-        <div className="row">
-          <div className="jumbotron mt-5">
+        <div className="row align-items-center">
+          <div className="jumbotron mb-0">
             <div className="row justify-content-center">
               <div className="col-4">
                 <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
@@ -100,7 +100,11 @@ const Jumbotron = props => {
       );
     }
   }, [user, fetched, fetching, error, userData, languages]);
-  return <div className="container jumbotron-container">{jumbotronData}</div>;
+  return (
+    <div className="container-fluid jumbotron-main-container">
+      <div className="container jumbotron-container">{jumbotronData}</div>
+    </div>
+  );
 };
 
 Jumbotron.propTypes = {

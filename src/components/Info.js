@@ -10,7 +10,7 @@ const Info = props => {
   useEffect(() => {
     if (fetched) {
       setUserContactInfo(
-        <div className="container mt-5 mb-5">
+        <div className="container pt-5 pb-3">
           <h1 className="text-center text-white text-shadow">Contact me!</h1>
           <div className="row mt-5">
             <div className="col-md-4 text-center">
@@ -58,7 +58,7 @@ const Info = props => {
     }
   }, [userData, fetched]);
 
-  return <div>{userContactInfo}</div>;
+  return <div className="container-fluid Info-main">{userContactInfo}</div>;
 };
 
 Info.propTypes = {

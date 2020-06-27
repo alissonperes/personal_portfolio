@@ -59,8 +59,10 @@ const Projects = props => {
   }, [projects, fetched, fetching, error, projectsList]);
 
   return (
-    <div className="container">
-      <div className="row justify-content-center">{allProjects}</div>
+    <div className="container-flid projects-main pt-5">
+      <div className="container">
+        <div className="row justify-content-center mt-5">{allProjects}</div>
+      </div>
     </div>
   );
 };
