@@ -23,21 +23,24 @@ const Jumbotron = props => {
         <div className="row align-items-center">
           <div className="jumbotron mb-0">
             <div className="row justify-content-center">
-              <div className="col-4">
+              <div className="col-4 d-none d-sm-inline">
                 <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
               </div>
               <div className="col-lg-8">
-                <h1># AlissonPeres</h1>
-                <p className="lead">{userData.bio}</p>
-                <hr className="my-4" />
-                <h4>Skills</h4>
-                {languages.map(x => (
-                  <span key={x} className="badge badge-light mr-1">
-                    {x}
-                  </span>
-                ))}
-                <hr className="my-4" />
-
+                <div className="">
+                  <h1># AlissonPeres</h1>
+                  <p className="lead">{userData.bio}</p>
+                  <hr className="my-4" />
+                </div>
+                <div className="d-none d-sm-inline">
+                  <h4>Skills</h4>
+                  {languages.map(x => (
+                    <span key={x} className="badge badge-light mr-1">
+                      {x}
+                    </span>
+                  ))}
+                  <hr className="my-4" />
+                </div>
                 <div className="btn-group" role="group" aria-label="Social profiles">
                   <button type="button" className="btn btn-info">
                     <a
