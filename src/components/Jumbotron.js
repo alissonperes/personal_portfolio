@@ -42,7 +42,7 @@ const Jumbotron = props => {
                   <hr className="my-4" />
                 </div>
                 <div className="btn-group" role="group" aria-label="Social profiles">
-                  <button type="button" className="btn btn-info">
+                  <button type="button" className="btn btn-dark">
                     <a
                       className="text-white card-link stretched-link"
                       href={userData.url}
@@ -54,7 +54,7 @@ const Jumbotron = props => {
                     </a>
                   </button>
 
-                  <button type="button" className="btn btn-info">
+                  <button type="button" className="btn btn-dark">
                     <a
                       className="text-white card-link stretched-link"
                       href={userData.websiteUrl}
@@ -68,7 +68,7 @@ const Jumbotron = props => {
                 </div>
                 <div className="dropdown mt-3">
                   <button
-                    className="btn btn-info dropdown-toggle"
+                    className="btn btn-dark dropdown-toggle"
                     type="button"
                     id="dropdownMenuButton"
                     data-toggle="dropdown"
