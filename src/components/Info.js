@@ -13,7 +13,7 @@ const Info = props => {
         <div className="container pt-5 pb-3">
           <h1 className="text-center text-white text-shadow">Contact me!</h1>
           <div className="row mt-5">
-            <div className="col-md-4 text-center">
+            <div className="col-md-3 text-center">
               <h4>
                 <a
                   href={userData.websiteUrl}
@@ -25,7 +25,7 @@ const Info = props => {
                 </a>
               </h4>
             </div>
-            <div className="col-md-4 text-center">
+            <div className="col-md-3 text-center">
               <h4>
                 <a
                   href={`mailto:${userData.email}`}
@@ -37,7 +37,7 @@ const Info = props => {
                 </a>
               </h4>
             </div>
-            <div className="col-md-4 text-center">
+            <div className="col-md-3 text-center">
               <h4>
                 <a
                   href={userData.url}
@@ -46,6 +46,18 @@ const Info = props => {
                   rel="noopener noreferrer"
                 >
                   GitHub
+                </a>
+              </h4>
+            </div>
+            <div className="col-md-3 text-center">
+              <h4>
+                <a
+                  href="https://angel.co/u/alissonperes"
+                  className="text-white text-shadow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AngelList
                 </a>
               </h4>
             </div>

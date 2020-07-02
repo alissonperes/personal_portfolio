@@ -65,6 +65,18 @@ const Jumbotron = props => {
                       Linkedin
                     </a>
                   </button>
+
+                  <button type="button" className="btn btn-dark">
+                    <a
+                      className="text-white card-link stretched-link"
+                      href="https://angel.co/u/alissonperes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      role="button"
+                    >
+                      AngelList
+                    </a>
+                  </button>
                 </div>
                 <div className="dropdown mt-3">
                   <button

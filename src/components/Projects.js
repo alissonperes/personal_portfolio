@@ -23,7 +23,7 @@ const Projects = props => {
                     <h5 className="card-title">{x.primaryLanguage.name}</h5>
                     <p className="card-text">{x.shortDescriptionHTML}</p>
                     <div className="btn-group" role="group" aria-label="Project links">
-                      <button type="button" className="btn btn-info">
+                      <button type="button" className="btn btn-dark">
                         <a
                           href={x.url}
                           target="_blank"
@@ -34,7 +34,7 @@ const Projects = props => {
                         </a>
                       </button>
                       {x.homepageUrl ? (
-                        <button type="button" className="btn btn-info">
+                        <button type="button" className="btn btn-dark">
                           <a
                             href={x.homepageUrl}
                             target="_blank"
@@ -61,6 +61,11 @@ const Projects = props => {
   return (
     <div className="container-flid projects-main pt-5">
       <div className="container">
+        <div className="row">
+          <div className="col bg-dark">
+            <h3 className="text-center text-white text-shadow">Projects</h3>
+          </div>
+        </div>
         <div className="row justify-content-center mt-5">{allProjects}</div>
       </div>
     </div>
