@@ -18,6 +18,7 @@ const Projects = props => {
             <div className="row rounded m-2 pt-3 pb-3 project-item">
               <div className="col text-white">
                 <div className="card border-0 mb-3">
+                  <img className="card-img-top" src={x.openGraphImageUrl} alt={x.name} />
                   <div className="card-header">{x.name}</div>
                   <div className="card-body">
                     <h5 className="card-title">{x.primaryLanguage.name}</h5>
