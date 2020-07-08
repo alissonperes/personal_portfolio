@@ -11,7 +11,7 @@ const Info = props => {
     if (fetched) {
       setUserContactInfo(
         <div className="container pt-5 pb-3">
-          <h1 className="text-center text-white text-shadow">Contact me!</h1>
+          <h1 className="h1 text-center text-white text-shadow">Contact me!</h1>
           <div className="row mt-5">
             <div className="col-md-3 text-center">
               <h4>

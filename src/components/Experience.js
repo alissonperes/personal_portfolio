@@ -30,10 +30,10 @@ const Experience = props => {
     </div>
   ));
   return (
-    <div className="container-fluid bg-info">
+    <div className="container-fluid bg-container text-white">
       <div className="container">
         <div className="row flex-column pt-4">
-          <h1 className="exp-title mb-5">RELEVANT EXPERIENCE</h1>
+          <h1 className="h1 mb-5">Relevant Experience</h1>
           {expContainer}
         </div>
       </div>

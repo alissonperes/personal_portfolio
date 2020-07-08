@@ -64,7 +64,7 @@ const Projects = props => {
       <div className="container">
         <div className="row">
           <div className="col bg-dark">
-            <h3 className="text-center text-white text-shadow">Projects</h3>
+            <h1 className="h1 text-center text-white text-shadow">Projects</h1>
           </div>
         </div>
         <div className="row justify-content-center mt-5">{allProjects}</div>
