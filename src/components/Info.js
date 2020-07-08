@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import 'font-awesome/css/font-awesome.min.css';
 import '../assets/Info.scss';
 
 const Info = props => {
@@ -17,11 +18,11 @@ const Info = props => {
               <h4>
                 <a
                   href={userData.websiteUrl}
-                  className="text-white text-shadow"
+                  className="text-white text-shadow h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Linkedin
+                  <i className="fa fa-linkedin" />
                 </a>
               </h4>
             </div>
@@ -29,11 +30,11 @@ const Info = props => {
               <h4>
                 <a
                   href={`mailto:${userData.email}`}
-                  className="text-white text-shadow"
+                  className="text-white text-shadow h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {userData.email}
+                  <i className="fa fa-envelope" />
                 </a>
               </h4>
             </div>
@@ -41,11 +42,11 @@ const Info = props => {
               <h4>
                 <a
                   href={userData.url}
-                  className="text-white text-shadow"
+                  className="text-white text-shadow h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub
+                  <i className="fa fa-github" />
                 </a>
               </h4>
             </div>
@@ -53,11 +54,11 @@ const Info = props => {
               <h4>
                 <a
                   href="https://angel.co/u/alissonperes"
-                  className="text-white text-shadow"
+                  className="text-white text-shadow h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  AngelList
+                  <i className="fa fa-angellist" />
                 </a>
               </h4>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import 'font-awesome/css/font-awesome.min.css';
 import '../assets/Jumbotron.scss';
 
 const Jumbotron = props => {
@@ -28,7 +29,7 @@ const Jumbotron = props => {
               </div>
               <div className="col-lg-8">
                 <div className="">
-                  <h1 className="h1"># AlissonPeres</h1>
+                  <h1 className="h1">#AlissonPeres</h1>
                   <p className="lead">{userData.bio}</p>
                   <hr className="my-4" />
                 </div>
@@ -41,43 +42,37 @@ const Jumbotron = props => {
                   ))}
                   <hr className="my-4" />
                 </div>
-                <div className="btn-group" role="group" aria-label="Social profiles">
-                  <button type="button" className="btn btn-dark">
-                    <a
-                      className="text-white card-link stretched-link"
-                      href={userData.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      role="button"
-                    >
-                      Github
-                    </a>
-                  </button>
 
-                  <button type="button" className="btn btn-dark">
-                    <a
-                      className="text-white card-link stretched-link"
-                      href={userData.websiteUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      role="button"
-                    >
-                      Linkedin
-                    </a>
-                  </button>
+                <a
+                  className="text-white card-link h1"
+                  href={userData.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="button"
+                >
+                  <i className="fa fa-github" />
+                </a>
 
-                  <button type="button" className="btn btn-dark">
-                    <a
-                      className="text-white card-link stretched-link"
-                      href="https://angel.co/u/alissonperes"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      role="button"
-                    >
-                      AngelList
-                    </a>
-                  </button>
-                </div>
+                <a
+                  className="text-white card-link h1"
+                  href={userData.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="button"
+                >
+                  <i className="fa fa-linkedin" />
+                </a>
+
+                <a
+                  className="text-white card-link h1"
+                  href="https://angel.co/u/alissonperes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="button"
+                >
+                  <i className="fa fa-angellist" />
+                </a>
+
                 <div className="dropdown mt-3">
                   <button
                     className="btn btn-dark dropdown-toggle"
