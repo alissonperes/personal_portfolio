@@ -23,32 +23,27 @@ const Projects = props => {
                   <div className="card-body">
                     <h5 className="card-title">{x.primaryLanguage.name}</h5>
                     <p className="card-text">{x.shortDescriptionHTML}</p>
-                    <div className="btn-group" role="group" aria-label="Project links">
-                      <button type="button" className="btn btn-dark">
-                        <a
-                          href={x.url}
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          className="text-white stretched-link"
-                        >
-                          Github
-                        </a>
-                      </button>
-                      {x.homepageUrl ? (
-                        <button type="button" className="btn btn-dark">
-                          <a
-                            href={x.homepageUrl}
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className="text-white stretched-link"
-                          >
-                            Live
-                          </a>
-                        </button>
-                      ) : (
-                        ''
-                      )}
-                    </div>
+
+                    <a
+                      href={x.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="text-white h3 mr-3"
+                    >
+                      <i className="fa fa-github" />
+                    </a>
+                    {x.homepageUrl ? (
+                      <a
+                        href={x.homepageUrl}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="text-white h3"
+                      >
+                        <i className="fa fa-link" />
+                      </a>
+                    ) : (
+                      ''
+                    )}
                   </div>
                 </div>
               </div>
