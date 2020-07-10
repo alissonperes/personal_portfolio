@@ -1,13 +1,16 @@
 .projects-main {
-  background: url('../images/background_down.jpg');
+  background: #dee2e6;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.projects-container {
+  background: #3f4668;
+}
+
 .project-item {
-  background: #000000F0;
-  box-shadow: 5px 5px 30px #570546AB, -5px -5px 30px #570546AB;
+  background: #000000f0;
 }
 
 .card {

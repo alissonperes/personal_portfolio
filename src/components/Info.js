@@ -11,14 +11,15 @@ const Info = props => {
   useEffect(() => {
     if (fetched) {
       setUserContactInfo(
-        <div className="container pt-5 pb-3">
-          <h1 className="h1 text-center text-white text-shadow">Contact me!</h1>
+        <div className="container pt-4 pb-3">
+          <h1 className="h1 text-center text-white">Contact me!</h1>
+          <hr className="contact-hr" />
           <div className="row mt-5">
-            <div className="col-md-3 text-center">
+            <div className="col-6 col-md-3 text-center">
               <h4>
                 <a
                   href={userData.websiteUrl}
-                  className="text-white text-shadow h1"
+                  className="text-white h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -26,11 +27,11 @@ const Info = props => {
                 </a>
               </h4>
             </div>
-            <div className="col-md-3 text-center">
+            <div className="col-6 col-md-3 text-center">
               <h4>
                 <a
                   href={`mailto:${userData.email}`}
-                  className="text-white text-shadow h1"
+                  className="text-white h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -38,11 +39,11 @@ const Info = props => {
                 </a>
               </h4>
             </div>
-            <div className="col-md-3 text-center">
+            <div className="col-6 col-md-3 text-center">
               <h4>
                 <a
                   href={userData.url}
-                  className="text-white text-shadow h1"
+                  className="text-white h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -50,11 +51,11 @@ const Info = props => {
                 </a>
               </h4>
             </div>
-            <div className="col-md-3 text-center">
+            <div className="col-6 col-md-3 text-center">
               <h4>
                 <a
                   href="https://angel.co/u/alissonperes"
-                  className="text-white text-shadow h1"
+                  className="text-white h1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

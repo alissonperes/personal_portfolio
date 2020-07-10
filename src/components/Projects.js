@@ -14,36 +14,43 @@ const Projects = props => {
     if (fetched) {
       setAllProjects(
         projectsList.map(x => (
-          <div className="col-sm-10 col-md-6 pb-2 pb-md-4" key={x.name}>
-            <div className="row rounded m-2 pt-3 pb-3 project-item">
+          <div className="col-sm-10 col-md-6 p-0 mt-3 mb-3" key={x.name}>
+            <div className="row h-100 rounded m-3 pt-3 pb-3 project-item shadow">
               <div className="col text-white">
-                <div className="card border-0 mb-3">
+                <div className="card h-100 border-0 mb-3">
                   <img className="card-img-top" src={x.openGraphImageUrl} alt={x.name} />
                   <div className="card-header">{x.name}</div>
-                  <div className="card-body">
-                    <h5 className="card-title">{x.primaryLanguage.name}</h5>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <div className="d-none d-sm-inline">
+                      {x.languages.edges.map(lang => (
+                        <span key={lang.node.id} className="badge badge-light mr-1">
+                          {lang.node.name}
+                        </span>
+                      ))}
+                    </div>
                     <p className="card-text">{x.shortDescriptionHTML}</p>
-
-                    <a
-                      href={x.url}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="text-white h3 mr-3"
-                    >
-                      <i className="fa fa-github" />
-                    </a>
-                    {x.homepageUrl ? (
+                    <div>
                       <a
-                        href={x.homepageUrl}
+                        href={x.url}
                         target="_blank"
                         rel="noreferrer noopener"
-                        className="text-white h3"
+                        className="text-white h3 mr-3"
                       >
-                        <i className="fa fa-link" />
+                        <i className="fa fa-github" />
                       </a>
-                    ) : (
-                      ''
-                    )}
+                      {x.homepageUrl ? (
+                        <a
+                          href={x.homepageUrl}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="text-white h3"
+                        >
+                          <i className="fa fa-link" />
+                        </a>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -55,14 +62,14 @@ const Projects = props => {
   }, [projects, fetched, fetching, error, projectsList]);
 
   return (
-    <div className="container-flid projects-main pt-5">
-      <div className="container">
+    <div className="container-flid projects-main pt-5 pb-5">
+      <div className="container projects-container rounded shadow">
         <div className="row">
-          <div className="col bg-dark">
-            <h1 className="h1 text-center text-white text-shadow">Projects</h1>
+          <div className="col">
+            <h1 className="h1 text-center text-white pt-4">Projects</h1>
           </div>
         </div>
-        <div className="row justify-content-center mt-5">{allProjects}</div>
+        <div className="row justify-content-center mt-5 pb-4">{allProjects}</div>
       </div>
     </div>
   );

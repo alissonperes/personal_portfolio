@@ -8,6 +8,7 @@ const Experience = props => {
 
   const expContainer = experience.map(item => (
     <div className="col" key={item.company}>
+      <hr className="item-hr" />
       <div className="row">
         <div className="col-md-7">
           <h3>{item.company}</h3>
@@ -26,14 +27,13 @@ const Experience = props => {
           </ul>
         </div>
       </div>
-      <hr />
     </div>
   ));
   return (
     <div className="container-fluid bg-container text-white">
       <div className="container">
         <div className="row flex-column pt-4">
-          <h1 className="h1 mb-5">Relevant Experience</h1>
+          <h1 className="h1 text-center mb-5">Relevant Experience</h1>
           {expContainer}
         </div>
       </div>

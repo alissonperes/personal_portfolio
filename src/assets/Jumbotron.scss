@@ -1,5 +1,5 @@
 .jumbotron {
-  background: #ffffffb8;
+  background: #3f4668 !important;
 }
 
 .jumbotron-container {
@@ -7,9 +7,6 @@
   display: flex;
 }
 
-.jumbotron-main-container{
-  background: url('../images/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.jumbotron-main-container {
+  background: #f8f9fa;
 }

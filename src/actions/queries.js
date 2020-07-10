@@ -27,6 +27,13 @@ query userPinned {
           url
           shortDescriptionHTML
           openGraphImageUrl
+          languages (first: 10){
+            edges {
+              node {
+                id name
+              }
+            }
+          }
           primaryLanguage {
             name
           }

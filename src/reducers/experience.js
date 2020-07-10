@@ -4,9 +4,9 @@ const initialState = [
     period: 'Nov 2017 - Nov 2018',
     jobTitle: 'Senior Network Administrator',
     acomplishments: [
-      'Created Python scripts to improve daily network routines and assist monitoring.',
+      'Created Python scripts that improved daily network routines and assisted monitoring.',
       'Improved response time of incidents by generating scripts that run basic diagnostics on switches and attached the results on the specific ticket.',
-      'Helped implement OTRS as a ticket management system and network inventory system.',
+      'Implemented OTRS as a ticket management system and network inventory system.',
     ],
   },
   {
@@ -14,8 +14,8 @@ const initialState = [
     period: 'Jun 2016 - Dec 2016',
     jobTitle: 'Senior Support Analyst',
     acomplishments: [
-      'Apply configurations in CISCO equipments.',
-      'Performed signal stability checks, upgrade router firmware and reviewed current configurations.',
+      'Configured CISCO equipment to specific requirements.',
+      'Performed signal stability checks, upgraded router firmware and optimized configurations.',
     ],
   },
   {
@@ -23,9 +23,9 @@ const initialState = [
     period: 'Jun 2015 - Mar 2016',
     jobTitle: 'Information Technology Consultant',
     acomplishments: [
-      'Helped implement a software suite to improve time response of tickets.',
+      'Implemented new software that improved ticket time response.',
       'Implemented an inventory system to help the support team find all the necessary information on servers and network assets.',
-      'Constantly reviewed internal processes and services to decrease the service level agreement for customers.',
+      'Internal processes and services constantly reviewed to reduce incident response time.',
     ],
   },
   {
@@ -34,8 +34,8 @@ const initialState = [
     jobTitle: 'Senior Information Technology Analyst',
     acomplishments: [
       'Managed the IT technical support team.',
-      'Renewed the servers of the company and updated the network with open source software.',
-      'Implemented a workflow software to improve internal communication and improve efficiency for daily tasks.',
+      'Refitted company servers and updated the network with open source software.',
+      'Implemented workflow software that improved internal communications and efficiency in daily tasks.',
     ],
   },
 ];
