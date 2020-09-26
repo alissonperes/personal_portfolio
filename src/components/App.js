@@ -5,7 +5,6 @@ import { getMainData, getAllProjects } from '../actions/index';
 import Jumbotron from './Jumbotron';
 import Projects from './Projects';
 import Info from './Info';
-import Experience from './Experience';
 import '../assets/App.scss';
 
 const App = props => {
@@ -24,7 +23,6 @@ const App = props => {
   return (
     <div>
       <Jumbotron user={user} languages={languages} />
-      <Experience />
       <Projects projects={projects} />
       <Info user={user} />
     </div>
