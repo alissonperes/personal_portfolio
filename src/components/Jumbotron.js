@@ -23,11 +23,11 @@ const Jumbotron = props => {
       setJumbotronData(
         <div className="row align-items-center">
           <div className="jumbotron text-white mb-0 shadow">
-            <div className="row justify-content-center">
-              <div className="col-4 d-none d-sm-inline">
+            <div className="row flex-lg-row flex-md-row-reverse justify-content-center">
+              <div className="col-4 col-md-2 col-lg-4 d-none d-md-inline">
                 <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
               </div>
-              <div className="col-lg-8">
+              <div className="col-12 col-md-8 col-lg-8">
                 <div className="">
                   <h1 className="h1">#AlissonPeres</h1>
                   <p className="lead">{userData.bio}</p>

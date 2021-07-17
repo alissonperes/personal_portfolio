@@ -14,7 +14,7 @@ const Projects = props => {
     if (fetched) {
       setAllProjects(
         projectsList.map(x => (
-          <div className="col-sm-10 col-md-6 p-0 mt-3 mb-3" key={x.name}>
+          <div className="col-12 col-md-6 col-lg-4 p-0 mt-3 mb-3" key={x.name}>
             <div className="row h-100 rounded m-3 pt-3 pb-3 project-item shadow">
               <div className="col text-white">
                 <div className="card h-100 border-0 mb-3">
