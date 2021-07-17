@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { queryForUser, queryForProjects } from './queries';
 
+console.log(process.env.REACT_APP_GITHUB_API_KEY);
 const axiosOptions = query => ({
   url: 'https://api.github.com/graphql',
   headers: { Authorization: `Bearer ${process.env.REACT_APP_GITHUB_API_KEY}` },
