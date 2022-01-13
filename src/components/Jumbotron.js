@@ -22,88 +22,53 @@ const Jumbotron = props => {
     } else if (fetched) {
       setJumbotronData(
         <div className="row align-items-center">
-          <div className="jumbotron text-white mb-0 shadow">
-            <div className="row flex-lg-row flex-md-row-reverse justify-content-center">
-              <div className="col-4 col-md-2 col-lg-4 d-none d-md-inline">
-                <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
+          <div className="d-none d-md-block col-md-4">
+            <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
+          </div>
+          <div className="col-md-8">
+            <div className="col-12 col-md-8 col-lg-8">
+              <h1 className="h1">#AlissonPeres</h1>
+              <p className="lead">{userData.bio}</p>
+              <hr className="my-4" />
+              <div className="d-none d-sm-inline">
+                <h4>Skills</h4>
+                {languages.map(x => (
+                  <span key={x} className="badge badge-light mr-1">
+                    {x}
+                  </span>
+                ))}
+                <hr className="my-4" />
               </div>
-              <div className="col-12 col-md-8 col-lg-8">
-                <div className="">
-                  <h1 className="h1">#AlissonPeres</h1>
-                  <p className="lead">{userData.bio}</p>
-                  <hr className="my-4" />
-                </div>
-                <div className="d-none d-sm-inline">
-                  <h4>Skills</h4>
-                  {languages.map(x => (
-                    <span key={x} className="badge badge-light mr-1">
-                      {x}
-                    </span>
-                  ))}
-                  <hr className="my-4" />
-                </div>
 
-                <a
-                  className="text-white card-link h1"
-                  href={userData.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  role="button"
-                >
-                  <i className="fa fa-github" />
-                </a>
+              <a
+                className="text-white card-link h1"
+                href={userData.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="button"
+              >
+                <i className="fa fa-github" />
+              </a>
 
-                <a
-                  className="text-white card-link h1"
-                  href={userData.websiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  role="button"
-                >
-                  <i className="fa fa-linkedin" />
-                </a>
+              <a
+                className="text-white card-link h1"
+                href={userData.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="button"
+              >
+                <i className="fa fa-linkedin" />
+              </a>
 
-                <a
-                  className="text-white card-link h1"
-                  href="https://angel.co/u/alissonperes"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  role="button"
-                >
-                  <i className="fa fa-angellist" />
-                </a>
-
-                <div className="dropdown mt-3">
-                  <button
-                    className="btn btn-dark dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Download my CV
-                  </button>
-                  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a
-                      className="dropdown-item"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://alissonperes.com/docs/CV_Alisson%20Peres_EN.pdf"
-                    >
-                      English
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://alissonperes.com/docs/CV_Alisson%20Peres_PT-br.pdf"
-                    >
-                      Portuguese Brazil
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <a
+                className="text-white card-link h1"
+                href="https://angel.co/u/alissonperes"
+                target="_blank"
+                rel="noopener noreferrer"
+                role="button"
+              >
+                <i className="fa fa-angellist" />
+              </a>
             </div>
           </div>
         </div>,

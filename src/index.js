@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import store from './store';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import App from './components/App';
+import store from './store';
 
-window.onload = function () {
+const domFuntion = () => {
   ReactDOM.render(
     <Provider store={store}>
       <React.StrictMode>
@@ -17,3 +18,5 @@ window.onload = function () {
     document.getElementById('root'),
   );
 };
+
+window.onload = domFuntion;
