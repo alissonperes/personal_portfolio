@@ -8,5 +8,11 @@
 }
 
 .jumbotron-main-container {
-  background: #297ed2;
+  background: #601e4f;
+}
+
+@media (max-height: 450px) {
+  .skills-container {
+    display: none !important;
+  }
 }

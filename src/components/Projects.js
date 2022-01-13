@@ -23,7 +23,7 @@ const Projects = props => {
                   <div className="card-body d-flex flex-column justify-content-between">
                     <div className="d-none d-sm-inline">
                       {x.languages.edges.map(lang => (
-                        <span key={lang.node.id} className="badge badge-light mr-1">
+                        <span key={lang.node.id} className="badge badge-light me-1">
                           {lang.node.name}
                         </span>
                       ))}
@@ -34,7 +34,7 @@ const Projects = props => {
                         href={x.url}
                         target="_blank"
                         rel="noreferrer noopener"
-                        className="text-white h3 mr-3"
+                        className="text-white h3 me-3"
                       >
                         <i className="fa fa-github" />
                       </a>

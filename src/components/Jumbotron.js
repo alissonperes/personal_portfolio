@@ -21,19 +21,19 @@ const Jumbotron = props => {
       );
     } else if (fetched) {
       setJumbotronData(
-        <div className="row align-items-center">
+        <div className="row align-items-center text-light">
           <div className="d-none d-md-block col-md-4">
             <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
           </div>
           <div className="col-md-8">
-            <div className="col-12 col-md-8 col-lg-8">
+            <div>
               <h1 className="h1">#AlissonPeres</h1>
               <p className="lead">{userData.bio}</p>
               <hr className="my-4" />
-              <div className="d-none d-sm-inline">
+              <div className="skills-container d-inline">
                 <h4>Skills</h4>
                 {languages.map(x => (
-                  <span key={x} className="badge badge-light mr-1">
+                  <span key={x} className="badge bg-secondary me-2">
                     {x}
                   </span>
                 ))}
