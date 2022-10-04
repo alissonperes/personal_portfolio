@@ -22,10 +22,7 @@ const Jumbotron = props => {
     } else if (fetched) {
       setJumbotronData(
         <div className="row align-items-center text-light">
-          <div className="d-none d-md-block col-md-4">
-            <img className="img w-100 rounded" src={userData.avatarUrl} alt={userData.name} />
-          </div>
-          <div className="col-md-8">
+          <div className="col-md-8 m-auto">
             <div>
               <h1 className="h1">#AlissonPeres</h1>
               <p className="lead">{userData.bio}</p>
