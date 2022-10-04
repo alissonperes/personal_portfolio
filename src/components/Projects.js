@@ -62,15 +62,8 @@ const Projects = props => {
   }, [projects, fetched, fetching, error, projectsList]);
 
   return (
-    <div className="container-flid projects-main pt-5 pb-5">
-      <div className="container projects-container rounded shadow">
-        <div className="row">
-          <div className="col">
-            <h1 className="h1 text-center text-white pt-4">Projects</h1>
-          </div>
-        </div>
-        <div className="row justify-content-center mt-5 pb-4">{allProjects}</div>
-      </div>
+    <div className="container-flid projects-container projects-main pt-5 pb-5">
+        <div className="row justify-content-center pb-4">{allProjects}</div>
     </div>
   );
 };
