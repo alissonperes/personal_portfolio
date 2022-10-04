@@ -63,7 +63,7 @@ const Projects = props => {
 
   return (
     <div className="container-flid projects-container projects-main pt-5 pb-5">
-        <div className="row justify-content-center pb-4">{allProjects}</div>
+      <div className="row justify-content-center pb-4">{allProjects}</div>
     </div>
   );
 };
