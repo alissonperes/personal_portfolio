@@ -1,84 +1,334 @@
-# AlissonPeres Personal Portfolio
+#### Setup Vite and Tailwind
 
-This project was created with
+[Tailwind Docs](https://tailwindcss.com/docs/guides/vite)
 
-- React
-- Redux
-- Redux Thunk
-- HTML5 & CSS3
-- Github GraphQL API
+- setup vite project
 
-Feel free to Fork or download this repository.
+```sh
+npm create vite@latest my-project -- --template react
+cd my-project
+```
 
-For this project to work it's necessary to have a github API key.
+- add tailwind
 
-Follow the steps in ["Creating a personal access token for the command line"](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) to create a token. The scopes you require depends on the type of data you're trying to request.
+```sh
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- rename to tailwind.config.cjs
+- add following content
 
-## Available Scripts
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
 
-In the project directory, you can run:
+- remove App.css
+- delete contents of index.css
+- delete contents of App.jsx
+- change title
 
-### `yarn start`
+```js
+const App = () => {
+  return <div>App</div>;
+};
+export default App;
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Add the Tailwind directives to your CSS
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+index.css
 
-### `yarn test`
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tailwind directives are instructions that decide how Tailwind CSS creates the styles for your website. They control the global styles, component styles, and utility classes.
 
-### `yarn build`
+- start the project "npm run dev"
+- setup first tailwind classes in App.jsx
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+App.jsx
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```js
+const App = () => {
+  return <h1 className='text-7xl font-bold underline'>Tailwind project</h1>;
+};
+export default App;
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Assets
 
-### `yarn eject`
+- get assets from "project-assets"
+- images from Undraw
+  [Undraw Docs](https://undraw.co/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Install More Libraries
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm i nanoid react-icons
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Useful Tailwind Extensions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Tailwind Fold](https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold)
 
-## Learn More
+#### Navbar Component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- explore 'links' array in data.jsx
+- setup components/navbar
+- import links
+- setup return and render in App.jsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+import { links } from '../data';
+const Navbar = () => {
+  return (
+    <nav className='bg-emerald-100 '>
+      <div className='mx-auto max-w-7xl  px-8 py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8'>
+        <h2 className='text-3xl font-bold'>
+          Web
+          <span className='text-emerald-600'>Dev</span>
+        </h2>
+        <div className='flex gap-x-3 '>
+          {links.map((link) => {
+            const { id, href, text } = link;
+            return (
+              <a
+                key={id}
+                href={href}
+                className='capitalize text-lg tracking-wide hover:text-emerald-600 duration-300'
+              >
+                {text}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </nav>
+  );
+};
+export default Navbar;
+```
 
-### Code Splitting
+#### Hero Component
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- setup components/Hero
+- setup return
+- render in App.jsx
 
-### Analyzing the Bundle Size
+```js
+import heroImg from '../assets/hero.svg';
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+const Hero = () => {
+  return (
+    <section className='bg-emerald-100 py-24  '>
+      <div className=' mx-auto max-w-7xl  px-8  grid  md:grid-cols-2 items-center gap-8'>
+        <article>
+          <h1 className='text-7xl font-bold tracking-wider'>I'm John</h1>
+          <p className='mt-4 text-3xl text-slate-700 capitalize tracking-wide'>
+            Front-end developer
+          </p>
+          <p className='mt-2 text-lg text-slate-700 capitalize tracking-wide'>
+            turning ideas into interactive reality
+          </p>
+          <div className='flex gap-x-4 mt-4'>
+            <a href='#'>
+              <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+            </a>
+            <a href='#'>
+              <FaLinkedin className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+            </a>
+            <a href='#'>
+              <FaTwitterSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+            </a>
+          </div>
+        </article>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+        <article className='hidden md:block '>
+          <img src={heroImg} className='h-80 lg:h-96' />
+        </article>
+      </div>
+    </section>
+  );
+};
+export default Hero;
+```
 
-### Making a Progressive Web App
+#### Repeating Styles
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+index.css
 
-### Advanced Configuration
+```css
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-7xl px-8;
+  }
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- replace in Hero and Navbar
 
-### Deployment
+#### Skills
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- explore skills array in data.jsx
+- create Skills,SkillsCard and SectionTitle components
+- setup return and render in App.jsx
 
-### `yarn build` fails to minify
+Skills.jsx
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```js
+import SkillsCard from './SkillsCard';
+import { skills } from '../data';
+import SectionTitle from './SectionTitle';
+const Skills = () => {
+  return (
+    <section className='py-20 align-element' id='skills'>
+      <SectionTitle text='tech stack ' />
+
+      <div class=' py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        {skills.map((skill) => {
+          return <SkillsCard key={skill.id} {...skill} />;
+        })}
+      </div>
+    </section>
+  );
+};
+export default Skills;
+```
+
+SectionTitle.jsx
+
+```js
+const SectionTitle = ({ text }) => {
+  return (
+    <div className='border-b border-gray-200 pb-5'>
+      <h2 className='text-3xl font-medium tracking-wider capitalize'>{text}</h2>
+    </div>
+  );
+};
+export default SectionTitle;
+```
+
+SkillsCard.jsx
+
+```js
+const SkillsCard = ({ icon, title, text }) => {
+  return (
+    <article>
+      <span>{icon}</span>
+      <h4 className='mt-6 font-bold'>{title}</h4>
+      <p className='mt-2 text-slate-500'>{text}</p>
+    </article>
+  );
+};
+export default SkillsCard;
+```
+
+#### Global Styles
+
+index.html
+
+```html
+<html lang="en" class="bg-slate-50 scroll-smooth"></html>
+```
+
+#### About
+
+- create About component and render in App.jsx
+
+```js
+import aboutSvg from '../assets/about.svg';
+import SectionTitle from './SectionTitle';
+const About = () => {
+  return (
+    <section class='bg-white py-20' id='about'>
+      <div class='align-element grid  md:grid-cols-2 items-center gap-16'>
+        <img src={aboutSvg} className='w-full h-64' />
+        <article>
+          <SectionTitle text='code and coffee' />
+          <p className='text-slate-600 mt-8 leading-loose'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+            omnis exercitationem tempora, aliquid deleniti tenetur vero esse
+            praesentium eaque dicta fugiat? Molestiae expedita, nulla neque
+            error porro sint distinctio possimus!
+          </p>
+        </article>
+      </div>
+    </section>
+  );
+};
+export default About;
+```
+
+#### Projects
+
+- explore "projects" array in data.jsx
+- create Projects and ProjectsCard components
+- setup return and render in App.jsx
+
+Projects.jsx
+
+```js
+import ProjectsCard from './ProjectsCard';
+import { projects } from '../data';
+import SectionTitle from './SectionTitle';
+const Projects = () => {
+  return (
+    <section className='py-20 align-element' id='projects'>
+      <SectionTitle text='web creations' />
+      <div className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8'>
+        {projects.map((project) => {
+          return <ProjectsCard key={project.id} {...project} />;
+        })}
+      </div>
+    </section>
+  );
+};
+export default Projects;
+```
+
+ProjectsCard.jsx
+
+```js
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { TbWorldWww } from 'react-icons/tb';
+const ProjectsCard = ({ url, img, github, title, text }) => {
+  return (
+    <article className='bg-white rounded-lg shadow-md block hover:shadow-xl duration-300'>
+      <img
+        src={img}
+        alt={title}
+        className='w-full object-cover rounded-t-lg h-64 '
+      />
+      <div className='capitalize p-8'>
+        <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
+        <p className='mt-4 text-slate-700 leading-loose'>{text}</p>
+        <div className='mt-4 flex gap-x-4'>
+          <a href={url}>
+            <TbWorldWww className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+          </a>
+          <a href={github}>
+            <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+};
+export default ProjectsCard;
+```
+
+#### Extra Challenge
+
+- setup projects in CMS
