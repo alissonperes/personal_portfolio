@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const SkillsCard = ({ icon, title, text }) => {
   return (
     <article>
@@ -6,5 +8,11 @@ const SkillsCard = ({ icon, title, text }) => {
       <p className='mt-2 text-slate-500'>{text}</p>
     </article>
   );
+};
+
+SkillsCard.propTypes = {
+  icon: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
 };
 export default SkillsCard;
