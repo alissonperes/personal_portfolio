@@ -22,8 +22,7 @@ import { DiRuby, DiPython } from 'react-icons/di';
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
   { id: nanoid(), href: '#skills', text: 'skills' },
-  { id: nanoid(), href: '#about', text: 'about' },
-  { id: nanoid(), href: '#projects', text: 'projects' },
+  { id: nanoid(), href: '#about', text: 'about' }
 ];
 
 export const skills = [
@@ -150,13 +149,5 @@ export const projects = [
     github: 'https://github.com/alissonperes/Pets-Images',
     title: 'Pets-Images',
     text: 'Basic App using React, React Native &amp; Redux fetching data from thedogapi and thecatapi.',
-  },
-  {
-    id: nanoid(),
-    img: 'https://opengraph.githubassets.com/c05262c8bd7c1dd1ee7824eea121cc69c34523e147579a856153ebaf16632ace/alissonperes/mv_bookstore',
-    url: 'https://magicians-books.herokuapp.com/',
-    github: 'https://github.com/alissonperes/mv_bookstore',
-    title: 'bookstore',
-    text: 'Bookstore built with React &amp; Redux.',
-  },
+  }
 ];

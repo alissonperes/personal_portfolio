@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const SectionTitle = ({ text }) => {
   return (
     <div className='border-b border-gray-200 pb-5'>
@@ -5,4 +7,9 @@ const SectionTitle = ({ text }) => {
     </div>
   );
 };
+
+SectionTitle.propTypes = {
+  text: PropTypes.string,
+};
+
 export default SectionTitle;

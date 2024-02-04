@@ -3,12 +3,12 @@ import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
-    <nav className='bg-violet-200 fixed top-0 left-0 right-0'>
+    <nav className='bg-violet-200 sticky top-0 left-0 right-0'>
       <div className='align-element py-4 flex justify-between flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8'>
         <h2 className='text-3xl font-bold'>
           <span className='text-violet-700'>alissonperes</span>.com
         </h2>
-        <div className='flex gap-x-3'>
+        <div className='flex gap-x-2'>
           {links.map((link) => {
             const { id, href, text } = link;
             return (
@@ -22,7 +22,7 @@ const Navbar = () => {
             );
           })}
         </div>
-        <div className='flex gap-x-3'>
+        <div className='flex gap-x-2'>
           <a
             href='https://github.com/alissonperes'
             target='_blank'
