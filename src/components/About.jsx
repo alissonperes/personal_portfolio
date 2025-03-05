@@ -1,4 +1,5 @@
 import aboutSvg from '../assets/about.svg';
+import { userData } from '../data';
 import SectionTitle from './SectionTitle';
 const About = () => {
   return (
@@ -8,13 +9,7 @@ const About = () => {
         <article>
           <SectionTitle text='code and coffee' />
           <p className='text-slate-600 mt-8 leading-loose'>
-            Experienced DevOps professional proficient in automating,
-            optimizing, and accelerating software development and IT operations.
-            Adept at implementing CI/CD pipelines, managing cloud
-            infrastructure, and fostering cross-functional collaboration.
-            Skilled in a wide range of DevOps tools and methodologies, dedicated
-            to ensuring the efficient and continuous delivery of high-quality
-            software solutions.
+            {userData.userElevator}
           </p>
         </article>
       </div>

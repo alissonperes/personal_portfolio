@@ -1,6 +1,7 @@
 import { skills } from '../data';
 import SectionTitle from './SectionTitle';
 import SkillsCard from './SkillsCard';
+
 const Skills = () => {
   return (
     <section className='pt-28 align-element ' id='skills'>
