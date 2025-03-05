@@ -4,6 +4,8 @@ import {
   FaReact,
   FaDocker,
   FaLinux,
+  FaGithubSquare, 
+  FaLinkedin
 } from 'react-icons/fa';
 import {
   SiTerraform,
@@ -18,6 +20,21 @@ import {
 } from 'react-icons/si';
 import { DiRuby, DiPython } from 'react-icons/di';
 
+export const userData = {
+  userName: 'alissonperes',
+  heroTitle: '#AlissonPeres',
+  position: 'DevOp/SRE',
+  userIntro: 'always learning new technologies and passionate about elegant code, good docs, beautiful server organization and pepperoni pizza.',
+  userElevator: `Experienced DevOps professional proficient in automating, optimizing, and accelerating software development and IT operations. Adept at implementing CI/CD pipelines, managing cloud infrastructure, and fostering cross-functional collaboration. Skilled in a wide range of DevOps tools and methodologies, dedicated to ensuring the efficient and continuous delivery of high-quality software solutions.`,
+  linkedin: {
+    link: 'https://www.linkedin.com/in/alissonperes',
+    icon: <FaLinkedin className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+  },
+  github: {
+    link: 'https://github.com/alissonperes/',
+    icon: <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+  }
+}
 
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
@@ -124,7 +141,7 @@ export const projects = [
     id: nanoid(),
     img: 'https://repository-images.githubusercontent.com/252512891/0b4eaa00-7699-11ea-8fa8-4a9709d9de0d',
     url: 'https://alissonperes.com/weather/',
-    github: 'https://github.com/alissonperes/mv_weatherapp',
+    github: userData.github.link + '/mv_weatherapp',
     title: 'weatherapp',
     text: 'Location-based weather app that uses the Open Weather Map API to fetch current and forecasted weather data. User can search cities around the globe.',
   },
@@ -132,7 +149,7 @@ export const projects = [
     id: nanoid(),
     img: 'https://repository-images.githubusercontent.com/269102179/0a2c7400-ab45-11ea-855c-b6071566f0c7',
     url: 'https://meals.alissonperes.com/',
-    github: 'https://github.com/alissonperes/mv_great_meals',
+    github: userData.github.link + '/mv_great_meals',
     title: 'great_meals',
     text: 'Meals catalogue app that uses TheMealDB API to fetch categories and meals. User can search meals from a list separated by categories.',
   },
@@ -140,15 +157,15 @@ export const projects = [
     id: nanoid(),
     img: 'https://repository-images.githubusercontent.com/263068478/384d3a80-b24e-11ea-886c-bed89e14cd5c',
     url: 'https://magicians-calculator.herokuapp.com/',
-    github: 'https://github.com/alissonperes/mv_simple_react_calculator',
+    github: userData.github.link + '/mv_simple_react_calculator',
     title: 'simple_react_calculator',
     text: 'Math-magicians INC simple calculator APP with React components.',
   },
   {
     id: nanoid(),
     img: 'https://repository-images.githubusercontent.com/277908019/5d9beb80-c1f1-11ea-94e4-cce894563152',
-    github: 'https://github.com/alissonperes/Pets-Images',
+    github: userData.github.link + '/Pets-Images',
     title: 'Pets-Images',
-    text: 'Basic App using React, React Native &amp; Redux fetching data from thedogapi and thecatapi.',
+    text: 'Basic App using React, React Native & Redux fetching data from thedogapi and thecatapi.',
   }
 ];
