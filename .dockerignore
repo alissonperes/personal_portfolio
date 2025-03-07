@@ -5,4 +5,8 @@ build
 **/.git
 **/.DS_Store
 **/node_modules
-dist
+
+Dockerfile
+.git
+.gitignore
+.env

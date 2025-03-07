@@ -1,12 +1,12 @@
-import { skills } from '../data';
+import { skills } from '../assets/data';
 import SectionTitle from './SectionTitle';
 import SkillsCard from './SkillsCard';
 
 const Skills = () => {
   return (
-    <section className='pt-28 align-element ' id='skills'>
+    <section className='h-full min-h-screen w-full pt-12 p-4' id='skills'>
       <SectionTitle text='tech stack' />
-      <div className='py-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+      <div className='grid gap-14 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 xl:grid-cols-4'>
         {skills.map((skill) => {
           return <SkillsCard key={skill.id} {...skill} />;
         })}

@@ -1,40 +1,50 @@
-import heroImg from '../assets/hero.svg';
-import { userData } from '../data';
+import PropTypes from 'prop-types';
 
-const Hero = () => {
+const Hero = ({ heroTitle, position, userIntro, github, linkedin, heroImg }) => {
   return (
     <div className='bg-violet-200 py-10' id='home'>
       <div className='align-element grid md:grid-cols-2 items-center gap-8'>
         <article>
-          <h1 className='text-5xl font-bold tracking-wider'>{userData.heroTitle}</h1>
+          <h1 className='text-5xl font-bold tracking-wider'>{heroTitle}</h1>
           <p className='mt-4 text-3xl text-slate-700 capitalize tracking-wide'>
-            {userData.position}
+            {position}
           </p>
           <p className='mt-2 text-lg text-slate-700 capitalize tracking-wide'>
-            {userData.userIntro}
+            {userIntro}
           </p>
           <div className='flex gap-x-4 mt-4'>
             <a
-              href={userData.github.link}
+              href={github.link}
               target='_blank'
               rel='noreferrer'
             >
-              {userData.github.icon}
+              {github.icon}
             </a>
             <a
-              href={userData.linkedin.link}
+              href={linkedin.link}
               target='_blank'
               rel='noreferrer'
             >
-              {userData.linkedin.icon}
+              {linkedin.icon}
             </a>
           </div>
         </article>
-        <article className='hidden md:block'>
+        <article className='hidden md:flex justify-end '>
           <img src={heroImg} className='h-80 lg:h-96' />
         </article>
       </div>
     </div>
   );
 };
+
+Hero.propTypes = {
+  heroTitle: PropTypes.string,
+  position: PropTypes.string,
+  userIntro: PropTypes.string,
+  serIntro: PropTypes.string,
+  github: PropTypes.object,
+  linkedin: PropTypes.object,
+  heroImg: PropTypes.string,
+};
+
 export default Hero;

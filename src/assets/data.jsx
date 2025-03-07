@@ -19,11 +19,17 @@ import {
   SiRubyonrails,
 } from 'react-icons/si';
 import { DiRuby, DiPython } from 'react-icons/di';
+import heroImg from '../assets/bitmap.svg';
+import aboutSvg from '../assets/about.svg';
 
 export const userData = {
   userName: 'alissonperes',
   heroTitle: '#AlissonPeres',
   position: 'DevOp/SRE',
+  navTitle: <><span className='text-violet-600'>alissonperes</span>.com</>,
+  userWebsiteURL: 'https://alissonperes.com',
+  userImage: aboutSvg,
+  heroImg: heroImg,
   userIntro: 'always learning new technologies and passionate about elegant code, good docs, beautiful server organization and pepperoni pizza.',
   userElevator: `Experienced DevOps professional proficient in automating, optimizing, and accelerating software development and IT operations. Adept at implementing CI/CD pipelines, managing cloud infrastructure, and fostering cross-functional collaboration. Skilled in a wide range of DevOps tools and methodologies, dedicated to ensuring the efficient and continuous delivery of high-quality software solutions.`,
   linkedin: {
@@ -48,91 +54,91 @@ export const skills = [
     id: nanoid(),
     title: 'Javascript',
     icon: <FaJs className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality',
+    text: "I'm pretty good at JavaScript, building interactive and dynamic web apps that focus on smooth user experiences and functionality.",
   },
   {
     id: nanoid(),
     title: 'React',
     icon: <FaReact className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.',
+    text: "I'm fairly skilled with React, building efficient and interactive front-end apps that focus on a component-based structure for smooth development and performance.",
   },
   {
     id: nanoid(),
     title: 'Python',
     icon: <DiPython className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Python, used in conjunction with other tools like Docker, Azure DevOps, and terraform to create a comprehensive CI/CD workflow with a safe planned rollback.',
+    text: "I'm pretty good with Python, and I use it along with Docker, Azure DevOps, and Terraform to build solid CI/CD pipelines, including smooth, safe rollback plans.",
   },
   {
     id: nanoid(),
     title: 'Ruby',
     icon: <DiRuby className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in  Ruby, managing all Chef components and nodes maintaining the chef-repo following code standards and concept of DRY code.',
+    text: "I'm pretty good with Ruby, handling all Chef components and nodes. I keep the chef-repo organized, sticking to coding standards and using the DRY (Don't Repeat Yourself) principle.",
   },
   {
     id: nanoid(),
     title: 'Ruby on Rails',
     icon: <SiRubyonrails className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Ruby on Rails, building backend API applications with GraphQL, and RESTful API. ',
+    text: "I'm pretty comfortable with Ruby on Rails, building backend apps with GraphQL and RESTful APIs. I focus on keeping things efficient and smooth, ensuring the backend runs reliably and handles data well.",
   },
   {
     id: nanoid(),
     title: 'C#',
     icon: <SiCsharp className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in C# writing server-side code, implementing business logic, and designing interactive web interfaces.',
+    text: "I'm pretty good with C#, writing server-side code, handling business logic, and designing interactive web interfaces that work well together.",
   },
   {
     id: nanoid(),
     title: '.NET Core',
     icon: <SiDotnet className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in .NET Core, creating web applications, handling server-side logic, and integrating various components to deliver responsive and functional web solutions.',
+    text: "I'm solid with .NET Core, building web apps, handling server-side logic, and pulling together different parts to deliver fast and functional web solutions.",
   },
   {
     id: nanoid(),
     title: 'Linux',
     icon: <FaLinux className='h-16 w-16 text-violet-700' />,
-    text: 'Advanced proficiency in  Linux system administration, configuration, and maintenance. My experience includes managing complex Linux-based environments, ensuring optimal performance, security, and reliability.',
+    text: "I'm really skilled with Linux system admin, handling setup, config, and maintenance. I've worked with complex Linux environments, making sure everything runs smoothly, securely, and reliably.",
   },
   {
     id: nanoid(),
     title: 'Docker',
     icon: <FaDocker className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Docker, allowing me to create and manage containerized applications efficiently. I am capable of containerizing applications and services, orchestrating containers, and maintaining Docker environments to facilitate seamless deployment and scaling.',
+    text: "I'm pretty good with Docker, creating and managing containerized apps. I can containerize services, orchestrate containers, and maintain Docker environments to make deployment and scaling smooth.",
   },
   {
     id: nanoid(),
     title: 'Terraform',
     icon: <SiTerraform className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Terraform, enabling me to create and manage infrastructure as code (IaC) solutions. I am proficient in writing Terraform configurations, provisioning and orchestrating resources, and automating infrastructure deployment for improved efficiency and scalability.',
+    text: "I'm solid with Terraform, creating and managing infrastructure as code (IaC). I write Terraform configs, provision resources, and automate deployments to make infrastructure more efficient and scalable.",
   },
   {
     id: nanoid(),
     title: 'AWS',
     icon: <SiAmazonaws className='h-16 w-16 text-violet-700' />,
-    text: 'Advanced proficiency in AWS, including extensive experience in designing, deploying, and managing cloud-based solutions. My skills include a wide range of AWS services, enabling me to architect robust, scalable, and highly available cloud infrastructure.',
+    text: "I'm highly skilled in AWS, with tons of experience designing, deploying, and managing cloud solutions. I'm comfortable with a wide range of AWS services, helping me build scalable, reliable, and robust cloud infrastructure.",
   },
   {
     id: nanoid(),
     title: 'Azure',
     icon: <SiMicrosoftazure className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Azure, demonstrating my ability to work with various Azure services and solutions. I am proficient in creating and managing cloud resources, implementing Azure services, and contributing to the development of Azure-based applications and infrastructure.',
+    text: "I'm pretty good with Azure, working with its services and solutions. I can create and manage cloud resources, implement Azure services, and help develop Azure-based apps and infrastructure.",
   },
   {
     id: nanoid(),
     title: 'Azure DevOps',
     icon: <SiAzuredevops className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Azure DevOps, allowing me to effectively collaborate on software development projects, streamline workflows, and automate continuous integration and continuous deployment (CI/CD) pipelines. My expertise in Azure DevOps includes configuring build and release pipelines, managing source code repositories, and enhancing development processes.',
+    text: "I'm solid with Azure DevOps, helping teams collaborate, streamline workflows, and automate CI/CD pipelines. I've worked on setting up build/release pipelines, managing repos, and improving development processes.",
   },
   {
     id: nanoid(),
     title: 'Chef',
     icon: <SiChef className='h-16 w-16 text-violet-700' />,
-    text: 'Intermediate proficiency in Chef, allowing me to effectively manage and automate infrastructure configurations. My experience includes creating and maintaining Chef cookbooks, implementing configuration management, and contributing to the provisioning of resources in various environments.',
+    text: "I'm pretty good with Chef, managing and automating infrastructure configs. I've worked on creating and maintaining Chef cookbooks, handling configuration management, and helping provision resources in different environments.",
   },
   {
     id: nanoid(),
     title: 'Puppet',
     icon: <SiPuppet className='h-16 w-16 text-violet-700' />,
-    text: 'I have basic familiarity with Puppet and am in the early stages of developing my skills in automating configuration management. I have started working with Puppet manifests and exploring its capabilities for managing infrastructure, but I\'m in the early stages of gaining hands-on experience.',
+    text: "I'm getting the hang of Puppet, just starting to work with manifests and exploring its config management features. I'm still in the early stages, but I'm learning how to use it for automating infrastructure.",
   },
 ];
 
