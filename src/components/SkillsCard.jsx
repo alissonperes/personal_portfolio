@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 const SkillsCard = ({ title, text, iteration, icons }) => {
-  console.log(icons[iteration%icons.length])
   return (
     <article className='rounded-xl bg-white p-8 text-center shadow-md hover:shadow-lg hover:shadow-violet-700 delay-150 duration-700 transition cursor-pointer'>
       <div className='grid -translate-y-10 transform items-center justify-center '>
