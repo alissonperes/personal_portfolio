@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const About = ({ userImage, userElevator }) => {
   return (
-    <section className='bg-white py-28' id='about'>
-      <div className='align-element grid md:grid-cols-2 items-center gap-16 mt-20'>
-        <img src={userImage} className='w-full h-64 mt-20' />
-        <article>
-          <SectionTitle text='code and coffee' />
-          <p className='text-slate-600 mt-8 leading-loose'>
+    <section className='md:align-element' id='about'>
+      <SectionTitle text='code and coffee' />
+      <div className='bg-white py-12 md:align-element grid md:grid-cols-2 items-center justify-items-stretch gap-16 '>
+        <img src={userImage} className='h-64 md:h-auto' />
+        <article className='px-4 md:h-full'>
+          <p className='text-slate-600 text-[.9rem] mt-8 leading-loose'>
             {userElevator}
           </p>
         </article>

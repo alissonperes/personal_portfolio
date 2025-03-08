@@ -19,14 +19,18 @@ import {
   SiRubyonrails,
 } from 'react-icons/si';
 import { DiRuby, DiPython } from 'react-icons/di';
-import heroImg from '../assets/bitmap.svg';
-import aboutSvg from '../assets/about.svg';
+import heroImg from '../assets/bitmap.webp';
+import aboutSvg from '../assets/about.webp';
+import aliIco from '../assets/ali.webp';
+import laliIco from '../assets/lali.webp';
+import bibiIco from '../assets/biba.webp';
+import floIco from '../assets/flor.webp';
 
 export const userData = {
   userName: 'alissonperes',
   heroTitle: '#AlissonPeres',
   position: 'DevOp/SRE',
-  navTitle: <><span className='text-violet-600'>alissonperes</span>.com</>,
+  navTitle: <a href="#"><span className='text-violet-600'>alissonperes</span>.com</a>,
   userWebsiteURL: 'https://alissonperes.com',
   userImage: aboutSvg,
   heroImg: heroImg,
@@ -43,11 +47,18 @@ export const userData = {
 }
 
 export const links = [
-  { id: nanoid(), href: '#home', text: 'home' },
+  { id: nanoid(), href: '#', text: 'home' },
   { id: nanoid(), href: '#skills', text: 'skills' },
   { id: nanoid(), href: '#about', text: 'about' },
   { id: nanoid(), href: '#projects', text: 'projects' }
 ];
+
+export const icons = [
+  laliIco,
+  bibiIco,
+  floIco,
+  aliIco,
+]
 
 export const skills = [
   {

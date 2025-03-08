@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 
 const Hero = ({ heroTitle, position, userIntro, github, linkedin, heroImg }) => {
   return (
-    <div className='bg-violet-200 py-10' id='home'>
-      <div className='align-element grid md:grid-cols-2 items-center gap-8'>
-        <article>
-          <h1 className='text-5xl font-bold tracking-wider'>{heroTitle}</h1>
-          <p className='mt-4 text-3xl text-slate-700 capitalize tracking-wide'>
+    <div className='bg-violet-200 py-10 shadow-md shadow-violet-200 md:shadow-violet-300/60 md:shadow-2xl' id='home'>
+      <div className='align-element flex justify-center items-center md:max-h-[60vh]'>
+        <article className='md:max-w-[28rem]'>
+          <h1 className='text-2xl font-bold'>{heroTitle}</h1>
+          <p className='mt-4 text-xl text-slate-700 capitalize'>
             {position}
           </p>
-          <p className='mt-2 text-lg text-slate-700 capitalize tracking-wide'>
+          <p className='mt-2 text-lg text-slate-700 capitalize'>
             {userIntro}
           </p>
           <div className='flex gap-x-4 mt-4'>
@@ -29,9 +29,9 @@ const Hero = ({ heroTitle, position, userIntro, github, linkedin, heroImg }) => 
             </a>
           </div>
         </article>
-        <article className='hidden md:flex justify-end '>
-          <img src={heroImg} className='h-80 lg:h-96' />
-        </article>
+        <div className='hidden md:block '>
+        <img src={heroImg} className='size-80' />
+        </div>
       </div>
     </div>
   );
