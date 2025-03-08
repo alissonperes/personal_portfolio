@@ -29,6 +29,8 @@ This is a simple website built using **Vite** and **Tailwind CSS**, featuring a 
 - Dynamic content powered by `data.jsx`.
 - Reusable React components for layout and data rendering.
 
+[Back to top](#table-of-contents)
+
 ## Setup
 
 ### Prerequisites
@@ -59,9 +61,13 @@ npm run build
 
 This will generate the optimized files in the `dist` folder.
 
+[Back to top](#table-of-contents)
+
 ## Usage
 
 All the content on the website is driven by `data.jsx`, where the necessary information is stored as JSON. The data is used by the following React components to dynamically render the website.
+
+[Back to top](#table-of-contents)
 
 ## Components
 
@@ -84,6 +90,8 @@ The **About** component imports `userData` from `data.jsx` and displays a longer
 ### Projects
 
 The **Projects** component imports `projects` from `data.jsx`. It maps over the `projects` array and displays each project as a card, including the project name, description, and any relevant links or details.
+
+[Back to top](#table-of-contents)
 
 ## Data Structure
 
@@ -138,7 +146,10 @@ export const projects = [
 
 You can customize this file with your own content to dynamically update the components.
 
+[Back to top](#table-of-contents)
+
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
+[Back to top](#table-of-contents)
