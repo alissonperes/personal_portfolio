@@ -1,6 +1,6 @@
 # My Website
 
-This is a simple website built using **Vite** and **Tailwind CSS**, featuring a **React** component structure. The website is dynamic and driven by a `data.jsx` file, which contains content in JSON format that is used to generate React components.
+This is a simple website built using **Vite** and **Bootstrap CSS**, featuring a **React** component structure. The website is dynamic and driven by a `data.jsx` file, which contains content in JSON format that is used to generate React components.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ This is a simple website built using **Vite** and **Tailwind CSS**, featuring a 
 ## Features
 
 - Fast build and development using **Vite**.
-- Styled with **Tailwind CSS**.
+- Styled with **Bootstrap CSS**.
 - Dynamic content powered by `data.jsx`.
 - Reusable React components for layout and data rendering.
 
@@ -106,11 +106,11 @@ export const userData = {
   userElevator: `lorem ipsum would be great here... if I where a bit less lazy`,
   linkedin: {
     link: 'https://www.linkedin.com/in/alissonperes',
-    icon: <FaLinkedin className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+    icon: <FaLinkedin />
   },
   github: {
     link: 'https://github.com/alissonperes/',
-    icon: <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+    icon: <FaGithubSquare />
   }
 }
 
@@ -126,7 +126,7 @@ export const skills = [
   {
     id: nanoid(),
     title: 'This is a card title',
-    icon: <FaJs className='h-16 w-16 text-violet-700' />,
+    icon: <FaJs />,
     text: 'This is the text for the card. there is also an icon here',
   },
 ];

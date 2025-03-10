@@ -1,15 +1,19 @@
 import SectionTitle from './SectionTitle';
-import SkillsCard from './SkillsCard';
 import PropTypes from 'prop-types';
 
-const Skills = ({skills, icons}) => {
+const Skills = ({skills}) => {
   return (
-    <section className='h-full min-h-screen w-auto m-auto md:align-element ' id='skills'>
-      <SectionTitle text='tech stack' />
-      <div className='grid gap-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4'>
-        {skills.map((skill, i) => {
-          return <SkillsCard key={skill.id} {...skill} iteration={i} icons={icons} />;
-        })}
+    <section className='container' id='skills'>
+      <SectionTitle text='Skills & Competencies' />
+      <div className='row pt-3 pb-2'>
+          {skills.map((x) =>  {
+              return (
+                <div key={x.id} className='col-12 col-sm-8 col-lg-4 col-xl-3'>
+                  <h5>{x.title}</h5>
+                  <p>{x.text}</p>
+                </div>
+              )
+          })}
       </div>
     </section>
   );
