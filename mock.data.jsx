@@ -12,7 +12,7 @@ export const userData = {
   userName: 'myFriend',
   heroTitle: '#MyFriend',
   position: 'bffs',
-  navTitle: <><span className='text-violet-600'>mywebsite</span>.io</>,
+  navTitle: <><span>mywebsite</span>.io</>,
   userWebsiteURL: 'https://alissonperes.com',
   userImage: aboutSvg,
   heroImg: heroImg,
@@ -20,11 +20,11 @@ export const userData = {
   userElevator: `You've got a friend in me You've got a friend in me When the road looks rough ahead And you're miles and miles from your nice warm bed You just remember what your old pal said Boy, you've got a friend in me Yeah, you've got a friend in me`,
   linkedin: {
     link: 'https://www.linkedin.com/in/NaN',
-    icon: <FaLinkedin className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+    icon: <FaLinkedin />
   },
   github: {
     link: 'https://github.com/NaN/',
-    icon: <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
+    icon: <FaGithubSquare />
   }
 }
 
@@ -39,19 +39,19 @@ export const skills = [
   {
     id: nanoid(),
     title: 'skill',
-    icon: <FaJs className='h-16 w-16 text-violet-700' />,
+    icon: <FaJs />,
     text: "You've got a friend in me You've got a friend in me When the road looks rough ahead And you're miles and miles from your nice warm bed You just remember what your old pal said",
   },
   {
     id: nanoid(),
     title: 'skill',
-    icon: <FaJs className='h-16 w-16 text-violet-700' />,
+    icon: <FaJs />,
     text: "You've got a friend in me You've got a friend in me When the road looks rough ahead And you're miles and miles from your nice warm bed You just remember what your old pal said",
   },
   {
     id: nanoid(),
     title: 'skill',
-    icon: <FaJs className='h-16 w-16 text-violet-700' />,
+    icon: <FaJs />,
     text: "You've got a friend in me You've got a friend in me When the road looks rough ahead And you're miles and miles from your nice warm bed You just remember what your old pal said",
   },
 ];

@@ -33,46 +33,45 @@ Eager to contribute to teams with a positive attitude, promoting collaboration a
 
 `04/2022 - Present`
 
-**Responsibilities**: Manage and develop automation for quick release of the company products, with automation tools (Terraform, chef, Azure devops, AWS). The initial project started with a POC migrating a demo of a few applications and services to the cloud, now we have most of the services and applications on the cloud.
+**Responsibilities**: Automation & Cloud Migration: Developed and managed automation for fast product releases using Terraform, Chef, Azure DevOps, and AWS. The project began as a proof of concept, migrating a few applications to the cloud. Now, the majority of services and applications are fully cloud-based, driving scalability and efficiency.
 
 `09/2020 - 04/2022`
 
-**Responsibilities**: Organization of the Azure environment, development in .NET Core building new features for an online casino.
+**Responsibilities**: Azure Environment & .NET Casino Development: Led the organization of the Azure environment and developed key features for an online casino using .NET Core. These efforts not only enhanced the system's overall performance but also introduced new functionalities, ensuring a more seamless and reliable user experience.
 
 ### Intelligenthack
 
 `09/2020 - 09/2021`
 
-**Responsibilities**: Organization of the Azure environment, junior developer that learned how to create an online casino in .net core.
+**Responsibilities**: Junior Developer & Azure Learning: As a junior developer, I played a role in organizing the Azure environment while learning the intricacies of developing an online casino in .NET Core. This hands-on experience provided me with valuable development skills and a deeper understanding of cloud-based application deployment.
 
 ### Self-employed Consultant
 
 `06/2016 - 03/2020`
 
-**Responsibilities**: Expansion of the structure of servers and network assets. Application of security protocols and analysis of customer structures. Create and provide training for internal teams.
+**Responsibilities**: Infrastructure Expansion & Security Training: Expanded the structure of servers and network assets, applying robust security protocols and conducting thorough analyses of customer infrastructure. Additionally, I created and provided training to internal teams to improve overall operational efficiency and security awareness.
 
 ### SMB Tecnologia
 
 `06/2015 – 03/2016`
 
-**Responsibilities**: IT consultant working with the pre-sales team to create and implement POCs to improve network security for customers. In collaboration with the pentesting team, we would scan for vulnerabilities and do planned tests on customers networks and suggest improvements. Mostly working with PFSense, Cisco and BitDefender.
+**Responsibilities**: IT Consultant & Network Security POCs: Worked as an IT consultant with the pre-sales team to design and implement proof of concepts (POCs) focused on improving customer network security. Collaborated with the pentesting team to scan for vulnerabilities and conduct planned tests, using tools like PFSense, Cisco, and BitDefender to enhance security.
 
 ### Polimaq Equipamentos
 
 `05/2014 – 06/2015`
 
-**Responsibilities**: IT team management, supporting the company's technological needs, including user support. As the team manager and senior network architect I had to take care of the network of the headquarters with four branches in different cities, manage the support team and the infrastructure team, as well as keep the network up to date and secure.
+**Responsibilities**: IT Team Management & Network Architecture: Managed the IT team, overseeing user support and handling the technological needs of the company. As the senior network architect, I was responsible for maintaining the headquarters' network and four branch offices, managing both support and infrastructure teams, while keeping the network secure and up to date.
 
 ### Donaroot Informatica
 
 `03/2006 — 03/2014`
 
-**Responsibilities**: Self employed consultant, I would analyze the network, monitor and implement projects for networks and virtualization. Mostly working with Cisco and Xen server. Later we had the opportunity to start working with openstack, starting with the version Diablo.
-Past Experiences
+**Responsibilities**: Consultant in Networking & Virtualization: As a self-employed consultant, I analyzed, monitored, and implemented network and virtualization projects, primarily using Cisco and Xen Server. Later, I had the opportunity to work with OpenStack, starting from the Diablo version, and gained hands-on experience with large-scale virtualization solutions.
 
 ### Past Experiences  
 
-My first job was at the age of 16 as an assistant mechanic, at 17 I was a mechanic. When I was 19 I started working at a call center for tech support on a car scanner. From there I went to a call center of an ISP, where I learned what a network was, and started learning the details of what fascinated me about the internet. Till this day I still work in the same area, following what fascinates me each time, with each advancement.
+Career Journey & Passion for Networks: My first job at 16 was as an assistant mechanic, later becoming a mechanic at 17. At 19, I transitioned into tech support for car scanners and then into a call center at an ISP. It was there that I discovered my passion for networks, which I continue to pursue today, evolving with every advancement in the field.
 
 ## Languages
 

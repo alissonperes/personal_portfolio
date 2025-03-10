@@ -1,9 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  color: #ffffff;
+}
 
-@layer components {
-  .align-element {
-    @apply mx-auto max-w-7xl px-8;
-  }
+#app {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+#app > section {
+  scroll-snap-align: end;
+}
+
+.container-fluid section {
+  height: 95vh;
+  overflow: scroll;
+}
+
+.navbar.sticky-top {
+  z-index: 1030 !important;
 }
