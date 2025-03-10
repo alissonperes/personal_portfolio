@@ -28,14 +28,14 @@ const Navbar = ({ links, navTitle, github, linkedin }) => {
             target='_blank'
             rel='noreferrer'
           >
-            {linkedin.icon}
+            {github.icon}
           </a>
           <a
             href={linkedin.link}
             target='_blank'
             rel='noreferrer'
           >
-            {github.icon}
+            {linkedin.icon}
           </a>
         </div>
       </div>
