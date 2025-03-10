@@ -112,13 +112,13 @@ export const projects = [
   },
   {
     id: nanoid(),
-    period: '04/2022 - 04/2025',
+    period: '05/2014 – 06/2015',
     title: 'Polimaq Equipamentos',
     text: "IT Team Management & Network Architecture: Managed the IT team, overseeing user support and handling the technological needs of the company. As the senior network architect, I was responsible for maintaining the headquarters' network and four branch offices, managing both support and infrastructure teams, while keeping the network secure and up to date.",
   },
   {
     id: nanoid(),
-    period: '04/2022 - 04/2025',
+    period: '03/2006 — 03/2014',
     title: 'Donaroot Informatica',
     text: "Consultant in Networking & Virtualization: As a self-employed consultant, I analyzed, monitored, and implemented network and virtualization projects, primarily using Cisco and Xen Server. Later, I had the opportunity to work with OpenStack, starting from the Diablo version, and gained hands-on experience with large-scale virtualization solutions.",
   },

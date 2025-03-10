@@ -31,11 +31,11 @@ Eager to contribute to teams with a positive attitude, promoting collaboration a
 
 ### iSolutions SRL
 
-`04/2022 - Present`
+`04/2022 - 04/2025`
 
 **Responsibilities**: Automation & Cloud Migration: Developed and managed automation for fast product releases using Terraform, Chef, Azure DevOps, and AWS. The project began as a proof of concept, migrating a few applications to the cloud. Now, the majority of services and applications are fully cloud-based, driving scalability and efficiency.
 
-`09/2020 - 04/2022`
+`09/2021 - 04/2022`
 
 **Responsibilities**: Azure Environment & .NET Casino Development: Led the organization of the Azure environment and developed key features for an online casino using .NET Core. These efforts not only enhanced the system's overall performance but also introduced new functionalities, ensuring a more seamless and reliable user experience.
 
