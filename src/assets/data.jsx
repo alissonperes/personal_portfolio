@@ -18,8 +18,8 @@ export const userData = {
   userWebsiteURL: 'https://alissonperes.com',
   userImage: aboutSvg,
   heroImg: heroImg,
-  userIntro: 'always learning new technologies and passionate about elegant code, good docs, beautiful server organization and pepperoni pizza.',
-  userElevator: `Experienced DevOps professional proficient in automating, optimizing, and accelerating software development and IT operations. Adept at implementing CI/CD pipelines, managing cloud infrastructure, and fostering cross-functional collaboration. Skilled in a wide range of DevOps tools and methodologies, dedicated to ensuring the efficient and continuous delivery of high-quality software solutions.`,
+  userIntro: 'Accomplished DevOps and IT professional with a robust track record in automating infrastructure, optimizing cloud environments, and driving efficiency through innovative process improvements. Proven ability to quantify impact—from reducing system downtime to modernizing legacy systems—with a focus on measurable outcomes. Skilled in delivering tailored, secure, and scalable solutions that exceed organizational goals.',
+  userElevator: `Started at 16 as an assistant mechanic and transitioned through various tech support roles, ultimately discovering a passion for networks while working at an ISP. Continuously pursued learning and career advancement to build a robust technical foundation.`,
   linkedin: {
     link: 'https://www.linkedin.com/in/alissonperes',
     icon: <FaLinkedin className='' />
@@ -32,9 +32,9 @@ export const userData = {
 
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
+  { id: nanoid(), href: '#experience', text: 'experience' },
   { id: nanoid(), href: '#skills', text: 'skills' },
   { id: nanoid(), href: '#about', text: 'about' },
-  { id: nanoid(), href: '#experience', text: 'experience' },
   { id: nanoid(), href: '#automation', text: 'automation' }
 ];
 
@@ -48,33 +48,38 @@ export const icons = [
 export const skills = [
   {
     id: nanoid(),
-    title: 'DevOps Expertise',
-    text: "Experience in automating, managing, and optimizing infrastructure with tools like Docker, Terraform, Ansible, and Chef. Skilled in deploying, scaling, and managing applications on AWS and Azure.",
+    title: 'DevOps & Automation',
+    text: "<p>Expertise in <strong>Terraform</strong>, <strong>Azure DevOps</strong>, <strong>Chef</strong>, and CI/CD pipelines in AWS environments.</p>",
   },
   {
     id: nanoid(),
-    title: 'CI/CD Pipelines & Automation',
-    text: "Proven ability to design, implement, and maintain CI/CD pipelines, ensuring efficient software delivery and smooth deployment processes.",
+    title: 'Cloud Management',
+    text: "<p>Proficient in managing <strong>AWS</strong>, <strong>GCP</strong>, and <strong>OpenStack</strong> environments to optimize resource performance and cost.</p>",
   },
   {
     id: nanoid(),
-    title: 'Cloud Infrastructure',
-    text: "Proficient in managing cloud services, infrastructure as code, and automating cloud environments on AWS and Azure.",
+    title: 'Network Management & Security',
+    text: "<p>Skilled in designing secure network architectures using <strong>VPNs</strong>, <strong>firewalls</strong>, <strong>pfSense</strong>, <strong>Cisco</strong>, and <strong>Bitdefender</strong>.</p>",
   },
   {
     id: nanoid(),
-    title: 'Programming Languages',
-    text: "Experienced in development using .NET, Node.js, Python, JavaScript, and Ruby, with a strong foundation in coding and scripting for infrastructure and automation.",
+    title: 'Software Delivery & Integration',
+    text: "<p>Adept in <strong>C# .NET Core</strong> backend development and system integration to enhance user experiences.</p>",
   },
   {
     id: nanoid(),
-    title: 'Cross-functional Collaboration',
-    text: "Experience working closely with development, operations, and support teams to foster communication, improve workflows, and deliver high-quality solutions.",
+    title: 'IT Support & Consulting',
+    text: "<p>Experienced in providing comprehensive IT support, documentation, and client training.</p>",
   },
   {
     id: nanoid(),
-    title: 'Previous Experience',
-    text: "Diverse background in IT operations, infrastructure management, and software development, leveraging past roles to improve processes and drive innovation in current DevOps practices.",
+    title: 'Programming & Scripting',
+    text: "<p>Proficient in <strong>PowerShell</strong>, <strong>Python</strong>, and <strong>Bash</strong> for automating cloud resources and system integrations.</p>",
+  },
+  {
+    id: nanoid(),
+    title: 'Virtualization & Infrastructure',
+    text: "<p>Managed virtualized environments with <strong>XenServer</strong> and <strong>OpenStack</strong> for improved scalability and system reliability.</p>",
   },
 ];
 
@@ -83,49 +88,84 @@ export const projects = [
     id: nanoid(),
     period: '04/2022 - 04/2025',
     company: 'iSolutions SRL',
-    title: 'iSolutions SRL',
-    text: 'Automation & Cloud Migration: Developed and managed automation for fast product releases using Terraform, Chef, Azure DevOps, and AWS. The project began as a proof of concept, migrating a few applications to the cloud. Now, the majority of services and applications are fully cloud-based, driving scalability and efficiency.',
+    title: 'DevOps/SRE',
+    text: `<ul>
+<li><strong>Engineered</strong> automated infrastructure deployment using <strong>Terraform</strong> across multiple AWS accounts, streamlining resource management.</li>
+<li><strong>Leveraged</strong> Chef for configuration management to maintain consistent and secure systems.</li>
+<li><strong>Orchestrated</strong> CI/CD pipelines with <strong>Azure DevOps</strong> and <strong>GitHub Actions</strong>, accelerating deployment cycles.</li>
+<li><strong>Optimized</strong> EC2, RDS, and Redis management by implementing auto-scaling, enhancing system performance.</li>
+<li><strong>Secured</strong> cross-account communications using <strong>Control Tower</strong>, reinforcing infrastructure integrity.</li>
+</ul>`,
   },
   {
     id: nanoid(),
     period: '09/2021 - 04/2022',
-    title: '',
-    text: "Azure Environment & .NET Casino Development: Led the organization of the Azure environment and developed key features for an online casino using .NET Core. These efforts not only enhanced the system's overall performance but also introduced new functionalities, ensuring a more seamless and reliable user experience.",
+    
+    title: 'Fullstack Web Developer',
+    text: `<ul>
+<li><strong>Developed</strong> robust backend systems using <strong>C# .NET Core</strong> to support scalable applications.</li>
+<li><strong>Integrated</strong> third-party data providers to ensure seamless data flow.</li>
+<li><strong>Modernized</strong> legacy <strong>.NET Framework</strong> applications by incorporating <strong>Redis</strong> caching, significantly enhancing performance.</li>
+<li><strong>Partnered</strong> with the UI/UX team to revamp application design and improve usability.</li>
+</ul>`,
   },
   {
     id: nanoid(),
     period: '09/2020 - 09/2021',
-    title: 'Intelligenthack',
-    text: "Junior Developer & Azure Learning: As a junior developer, I played a role in organizing the Azure environment while learning the intricacies of developing an online casino in .NET Core. This hands-on experience provided me with valuable development skills and a deeper understanding of cloud-based application deployment.",
+    company: 'Intelligenthack',
+    title: 'Fullstack Web Developer',
+    text: `<ul>
+<li><strong>Implemented</strong> key platform features with a focus on backend development, contributing to product robustness.</li>
+<li><strong>Streamlined</strong> Azure cloud infrastructure for staging environments, reducing deployment time and enhancing reliability.</li>
+<li><strong>Collaborated</strong> closely with senior developers throughout the full development lifecycle to deliver high-quality code.</li>
+</ul>`,
   },
   {
     id: nanoid(),
     period: '06/2016 - 03/2020',
+    company: 'Donaroot Informatica',
     title: 'Self-employed Consultant',
-    text: "Infrastructure Expansion & Security Training: Expanded the structure of servers and network assets, applying robust security protocols and conducting thorough analyses of customer infrastructure. Additionally, I created and provided training to internal teams to improve overall operational efficiency and security awareness.",
+    text: `<ul>
+<li><strong>Enhanced</strong> security posture by deploying <strong>CrowdStrike</strong>, <strong>Bitdefender</strong>, and <strong>pfSense</strong>, effectively reducing vulnerabilities.</li>
+<li><strong>Customized</strong> software solutions (e.g., <strong>Redmine</strong>, <strong>OTRS</strong>) to optimize workflow and task management.</li>
+<li><strong>Integrated</strong> OTRS with Zabbix to automate ticketing processes, significantly boosting operational efficiency.</li>
+<li><strong>Facilitated</strong> hybrid cloud migrations using <strong>AWS</strong>, <strong>GCP</strong>, and <strong>OpenStack</strong>, ensuring seamless transitions and cost savings.</li>
+</ul>`,
   },
   {
     id: nanoid(),
     period: '06/2015 – 03/2016',
-    title: 'SMB Tecnologia',
-    text: "IT Consultant & Network Security POCs: Worked as an IT consultant with the pre-sales team to design and implement proof of concepts (POCs) focused on improving customer network security. Collaborated with the pentesting team to scan for vulnerabilities and conduct planned tests, using tools like PFSense, Cisco, and BitDefender to enhance security.",
+    company: 'SMB Tecnologia',
+    title: 'IT Consultant',
+    text: `<ul>
+<li><strong>Collaborated</strong> with pre-sales teams to deliver tailored network security solutions, enhancing client satisfaction.</li>
+<li><strong>Conceptualized</strong> and executed PoC solutions that fortified network security and demonstrated clear value.</li>
+<li><strong>Supported</strong> pentesting efforts by identifying and remediating vulnerabilities, reducing security risks.</li>
+<li><strong>Implemented</strong> configurations for <strong>pfSense</strong>, <strong>Cisco firewalls</strong>, and <strong>Bitdefender</strong> to establish robust defenses.</li>
+</ul>`,
   },
   {
     id: nanoid(),
     period: '05/2014 – 06/2015',
-    title: 'Polimaq Equipamentos',
-    text: "IT Team Management & Network Architecture: Managed the IT team, overseeing user support and handling the technological needs of the company. As the senior network architect, I was responsible for maintaining the headquarters' network and four branch offices, managing both support and infrastructure teams, while keeping the network secure and up to date.",
+    company: 'Polimaq Equipamentos',
+    title: 'Systems Administrator',
+    text: `<ul>
+<li><strong>Oversaw</strong> the internal IT support team while directing the management of the company's infrastructure.</li>
+<li><strong>Implemented</strong> Zabbix for comprehensive monitoring and integrated it with the ticketing system, ensuring users received timely incident updates.</li>
+<li><strong>Developed</strong> custom scripts to automate responses—such as restarting services and managing server storage—reducing incident response times.</li>
+<li><strong>Deployed</strong> containerized web servers, significantly enhancing service responsiveness and scalability.</li>
+</ul>`,
   },
   {
     id: nanoid(),
     period: '03/2006 — 03/2014',
-    title: 'Donaroot Informatica',
-    text: "Consultant in Networking & Virtualization: As a self-employed consultant, I analyzed, monitored, and implemented network and virtualization projects, primarily using Cisco and Xen Server. Later, I had the opportunity to work with OpenStack, starting from the Diablo version, and gained hands-on experience with large-scale virtualization solutions.",
-  },
-  {
-    id: nanoid(),
-    period: '',
-    title: 'Past Experiences',
-    text: "Career Journey & Passion for Networks: My first job at 16 was as an assistant mechanic, later becoming a mechanic at 17. At 19, I transitioned into tech support for car scanners and then into a call center at an ISP. It was there that I discovered my passion for networks, which I continue to pursue today, evolving with every advancement in the field.",
+    company: 'Donaroot Informatica',
+    title: 'IT Consultant',
+    text: `<ul>
+<li><strong>Managed</strong> diverse projects focused on VM management and network optimization, enhancing overall system performance.</li>
+<li><strong>Upgraded</strong> network infrastructure by integrating VPNs, firewalls, and virtualization to improve reliability.</li>
+<li><strong>Engineered</strong> firewall and VPN configurations using <strong>pfSense</strong> and related technologies to fortify security.</li>
+<li><strong>Provided</strong> detailed documentation and support to ensure smooth knowledge transfer and ongoing maintenance.</li>
+</ul>`,
   },
 ];

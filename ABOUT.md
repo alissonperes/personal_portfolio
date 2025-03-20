@@ -1,118 +1,115 @@
 # Alisson Peres
 
-São Paulo, SP  
-+55 11 91343 1509  
-E-mail: [aperes.dev@gmail.com](mailto:aperes.dev@gmail.com)  
++55 11 91343 1509
+
+E-mail: [aperes.dev@gmail.com](mailto:aperes.dev@gmail.com)
 
 ---
 
-## Objective
-
-Passionate DevOps professional with expertise in automation, CI/CD pipelines, cloud management, and process optimization. Adept at fostering collaboration to drive innovation and operational excellence. Eager to grow in an ever-evolving tech landscape.
+## Professional Summary
+Accomplished DevOps and IT professional with a strong track record in automating infrastructure, optimizing cloud environments, and driving efficiency through innovative process improvements. Proven ability to quantify impact, including reducing system downtime and modernizing legacy systems, focusing on measurable outcomes. Skilled in delivering tailored, secure, and scalable solutions that consistently surpass organizational goals.
 
 ---
 
 ## Experience
 
-### iSolutions SRL  
-**DevOps/SRE**  
-_April 2022 – Present_
+### iSolutions SRL
 
-As a **DevOps / SRE Engineer**, I managed and optimized cloud infrastructure on **AWS**. Key responsibilities included:
+**DevOps/SRE**
 
-- Automated infrastructure with **Terraform** across multiple AWS accounts.
-- Used **Chef** for configuration management, ensuring system consistency.
-- Designed **CI/CD pipelines** with **Azure DevOps** and **GitHub Actions**.
-- Managed **EC2 instances**, **RDS**, and **Redis**, implementing auto-scaling.
-- Ensured secure cross-account communication using **Control Tower**.
+_April 2022 – April 2025_
 
-**Fullstack Web Developer**  
+- **Engineered** automated infrastructure deployment using **Terraform** across multiple AWS accounts, streamlining resource management.
+- **Leveraged** Chef for configuration management to maintain consistent and secure systems.
+- **Orchestrated** CI/CD pipelines with **Azure DevOps** and **GitHub Actions**, accelerating deployment cycles.
+- **Optimized** EC2, RDS, and Redis management by implementing auto-scaling, enhancing system performance.
+- **Secured** cross-account communications using **Control Tower**, reinforcing infrastructure integrity.
+
+**Fullstack Web Developer**
+
 _September 2021 – April 2022_
 
-As a **Full Stack Developer**, I enhanced the company’s applications. Key contributions:
+- **Developed** robust backend systems using **C# .NET Core** to support scalable applications.
+- **Integrated** third-party data providers to ensure seamless data flow.
+- **Modernized** legacy **.NET Framework** applications by incorporating **Redis** caching, significantly enhancing performance.
+- **Partnered** with the UI/UX team to revamp application design and improve usability.
 
-- Developed backend systems with **C# .NET Core**.
-- Integrated third-party data providers, ensuring seamless data flow.
-- Supported legacy **.NET Framework** applications, modernizing with **Redis** for caching.
-- Worked with the **UI/UX team** to improve design and usability.
+### Intelligenthack
 
-### Intelligenthack  
-**Fullstack Web Developer**  
+**Fullstack Web Developer**
+
 _September 2020 – September 2021_
 
-Contributed to developing an online platform. Key responsibilities:
+- **Implemented** key platform features with a focus on backend development, contributing to product robustness.
+- **Streamlined** Azure cloud infrastructure for staging environments, reducing deployment time and enhancing reliability.
+- **Collaborated** closely with senior developers throughout the full development lifecycle to deliver high-quality code.
 
-- Developed platform features, focusing on backend development.
-- Managed **Azure cloud infrastructure** for staging environments.
-- Collaborated with senior developers on the full development lifecycle.
+### Donaroot Informática
 
-### Donaroot Informatica  
-**IT Consultant**  
+**IT Consultant**
+
 _June 2016 – March 2020_
 
-Focused on security and infrastructure across multiple teams. Key responsibilities:
+- **Enhanced** security posture by deploying **CrowdStrike**, **Bitdefender**, and **pfSense**, effectively reducing vulnerabilities.
+- **Customized** software solutions (e.g., **Redmine**, **OTRS**) to optimize workflow and task management.
+- **Integrated** OTRS with Zabbix to automate ticketing processes, significantly boosting operational efficiency.
+- **Facilitated** hybrid cloud migrations using **AWS**, **GCP**, and **OpenStack**, ensuring seamless transitions and cost savings.
 
-- Enhanced security using **CrowdStrike**, **Bitdefender**, and **pfSense**.
-- Implemented and customized software solutions like **Redmine** and **OTRS**.
-- Led projects integrating **OTRS** with **Zabbix** for automated ticket creation.
-- Supported hybrid cloud infrastructure migrations with **AWS**, **GCP**, and **OpenStack**.
+### SMB Tecnologia
 
-### SMB Tecnologia  
-**IT Consultant**  
-_June 2015 – March 2016_
+**IT Consultant**
 
-Worked with the **pre-sales team** to deliver customized network security solutions. Key contributions:
+_June 2015 – June 2016_
 
-- Designed PoC solutions to improve network security.
-- Collaborated with the pentesting team to identify and mitigate risks.
-- Configured and deployed **pfSense**, **Cisco firewalls**, and **Bitdefender**.
+- **Collaborated** with pre-sales teams to deliver tailored network security solutions, enhancing client satisfaction.
+- **Conceptualized** and executed PoC solutions that fortified network security and demonstrated clear value.
+- **Supported** pen-testing efforts by identifying and remediating vulnerabilities, reducing security risks.
+- **Implemented** configurations for **pfSense**, **Cisco firewalls**, and **Bitdefender** to establish robust defenses.
 
-### Polimaq Equipamentos  
-**Systems Administrator**  
+### Polimaq Equipamentos
+
+**Systems Administrator**
+
 _May 2014 – June 2015_
 
-Managed **network infrastructure** and led the **IT support team**. Key responsibilities:
+- **Oversaw** the internal IT support team while directing the management of the company's infrastructure.
+- **Implemented** Zabbix for comprehensive monitoring and integrated it with the ticketing system, ensuring users received timely incident updates.
+- **Developed** custom scripts to automate responses—such as restarting services and managing server storage—reducing incident response times.
+- **Deployed** containerized web servers, significantly enhancing service responsiveness and scalability.
 
-- Optimized network architecture across multiple locations.
-- Reduced system downtime by 20% through improved troubleshooting and processes.
-- Implemented network security policies and led **server migration** projects.
-- Assisted in technology deployments, including virtualization.
+### Donaroot Informática
 
-### Donaroot Informatica  
-**IT Consultant**  
+**IT Consultant**
+
 _March 2006 – March 2014_
 
-Worked on diverse projects with a focus on **VM management** and **network optimization**. Key responsibilities:
-
-- Enhanced network infrastructure with **VPNs**, **firewalls**, and **virtualization**.
-- Configured firewalls and **VPNs** using **pfSense** and other technologies.
-- Supported **OpenStack** and **XenServer** to improve cloud infrastructure management.
-- Delivered full documentation and support for all projects.
+- **Managed** diverse projects focused on VM management and network optimization, enhancing overall system performance.
+- **Upgraded** network infrastructure by integrating VPNs, firewalls, and virtualization to improve reliability.
+- **Engineered** firewall and VPN configurations using **pfSense** and related technologies to fortify security.
+- **Provided** detailed documentation and support to ensure smooth knowledge transfer and ongoing maintenance.
 
 ---
 
 ## Skills & Competencies
 
-- **DevOps & Automation**: Extensive experience with **Terraform**, **Azure DevOps**, **Chef**, and **CI/CD pipelines** for AWS environments.
-- **Cloud Management**: Managed **AWS**, **GCP**, and **OpenStack** environments, optimizing resources for performance and cost.
-- **Network Management & Security**: Designed network architectures, implemented **VPNs**, **firewalls**, and **proxy servers**. Experience with **pfSense**, **Cisco**, and **BitDefender**.
-- **Software Delivery & Integration**: **C# .NET Core**, backend development, **SQL Server**, and collaboration with **UI/UX teams** for better user experiences.
-- **Programming & Scripting**: Proficient in **PowerShell**, **Python**, and **Bash** for automating cloud resources and system integrations.
-- **IT Support & Consulting**: Provided **IT support**, **documentation**, and **client training** for network and system management.
-- **Virtualization & Infrastructure**: Managed virtualized environments with **XenServer** and **OpenStack** for improved scalability and system reliability.
+- **DevOps & Automation:** Expertise in **Terraform**, **Azure DevOps**, **Chef**, and CI/CD pipelines in AWS environments.
+- **Cloud Management:** Proficient in managing **AWS**, **GCP**, and **OpenStack** environments to optimize resource performance and cost.
+- **Network Management & Security:** Skilled in designing secure network architectures using VPNs, firewalls, **pfSense**, **Cisco**, and **Bitdefender**.
+- **Software Delivery & Integration:** Adept in **C# .NET Core** backend development and system integration to enhance user experiences.
+- **IT Support & Consulting:** Experienced in providing comprehensive IT support, documentation, and client training.
+- **Programming & Scripting:** Proficient in **Python**, **Bash**, and **PowerShell** for automating tasks and system integrations.
+- **Virtualization & Infrastructure:** Experienced in managing virtualized environments with **XenServer** and **OpenStack**, optimizing resource utilization and scalability.
 
 ---
 
 ## Early Career Journey
 
-My journey began at 16 as an assistant mechanic, transitioning into tech support roles, eventually discovering my passion for networks while working at an ISP. Since then, I’ve pursued continuous learning and advancement in the tech field.
+Started at 16 as an assistant mechanic and transitioned through various tech support roles, ultimately discovering a passion for networks while working at an ISP. Continuously pursued learning and career advancement to build a robust technical foundation.
 
 ---
 
 ## Languages
 
-- **English:** Native  
-- **Portuguese:** Native  
+- **English:** Native
+- **Portuguese:** Native
 - **Spanish:** Intermediate
-
----

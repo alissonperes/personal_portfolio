@@ -11,9 +11,9 @@ const App = () => {
     <div className='text-bg-dark container-fluid' id='app' data-bs-theme="dark">
       <Navbar links={links} {...userData} />
       <Hero {...userData}/>
+      <Projects projects={projects}/>
       <Skills skills={skills} icons={icons}/>
       <About {...userData} />
-      <Projects projects={projects}/>
       <Footer {...userData} />
     </div>
   );

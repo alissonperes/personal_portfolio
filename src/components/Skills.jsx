@@ -8,9 +8,11 @@ const Skills = ({skills}) => {
       <div className='row pt-3 pb-2'>
           {skills.map((x) =>  {
               return (
-                <div key={x.id} className='col-12 col-sm-8 col-lg-4 col-xl-3'>
-                  <h5>{x.title}</h5>
-                  <p>{x.text}</p>
+                <div key={x.id} className='col-12 col-sm-8 col-lg-4'>
+                  <li>
+                    <h5>{x.title}</h5>
+                    <div dangerouslySetInnerHTML={{ __html: x.text }}></div>
+                  </li>
                 </div>
               )
           })}

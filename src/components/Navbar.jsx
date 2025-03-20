@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Navbar = ({ links, navTitle, github, linkedin }) => {
   return (
-    <nav className='flex navbar z-3 bg-dark border-bottom border-body navbar-expand-sm sticky-top'>
+    <nav className='flex navbar z-3 bg-dark border-bottom border-body navbar-expand-sm sticky-top p-0 pb-1'>
       <div className="container-fluid ">
         <span className='navbar-brand'>{ navTitle }</span>
         <div className='collapse navbar-collapse justify-content-center' id='navbarNavDropdown'>
