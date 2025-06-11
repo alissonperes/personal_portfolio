@@ -1,7 +1,5 @@
 # Alisson Peres
 
-+55 11 91343 1509
-
 E-mail: [aperes.dev@gmail.com](mailto:aperes.dev@gmail.com)
 
 ---
@@ -99,12 +97,6 @@ _March 2006 – March 2014_
 - **IT Support & Consulting:** Experienced in providing comprehensive IT support, documentation, and client training.
 - **Programming & Scripting:** Proficient in **Python**, **Bash**, and **PowerShell** for automating tasks and system integrations.
 - **Virtualization & Infrastructure:** Experienced in managing virtualized environments with **XenServer** and **OpenStack**, optimizing resource utilization and scalability.
-
----
-
-## Early Career Journey
-
-Started at 16 as an assistant mechanic and transitioned through various tech support roles, ultimately discovering a passion for networks while working at an ISP. Continuously pursued learning and career advancement to build a robust technical foundation.
 
 ---
 
