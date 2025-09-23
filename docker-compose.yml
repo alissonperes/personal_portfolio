@@ -1,6 +1,0 @@
-services:
-  frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: portfolio
