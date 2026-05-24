@@ -30,7 +30,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "export-loader": "^1.0.52",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.15",
     "postcss-loader": "^8.1.1",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
